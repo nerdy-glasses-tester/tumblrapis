@@ -1,0 +1,261 @@
+Request method:	POST
+Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/posts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "content": [
+        {
+            "text": "Hello this is my second post from RestAssured api automation testing!",
+            "type": "text"
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Content-Type: application/json; charset=utf-8
+Date: Fri, 27 Dec 2019 00:19:02 GMT
+Server: openresty
+Strict-Transport-Security: max-age=31536000; preload
+X-Ratelimit-Perday-Limit: 5000
+X-Ratelimit-Perday-Remaining: 4807
+X-Ratelimit-Perday-Reset: 2707
+X-Ratelimit-Perhour-Limit: 1000
+X-Ratelimit-Perhour-Remaining: 994
+X-Ratelimit-Perhour-Reset: 3045
+X-Rid: 1609705370639661080611365849813024422311
+X-UA-Compatible: IE=Edge,chrome=1
+Transfer-Encoding: chunked
+
+{
+    "meta": {
+        "status": 201,
+        "msg": "Created"
+    },
+    "response": {
+        "id": "189889877719",
+        "state": "published",
+        "display_text": "Posted to learningautomatingapis"
+    }
+}
+Request method:	GET
+Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/posts/189889877719
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=189889877719
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Date: Fri, 27 Dec 2019 00:19:02 GMT
+Server: openresty
+Strict-Transport-Security: max-age=31536000; preload
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+X-Ratelimit-Perday-Limit: 5000
+X-Ratelimit-Perday-Remaining: 4806
+X-Ratelimit-Perday-Reset: 2706
+X-Ratelimit-Perhour-Limit: 1000
+X-Ratelimit-Perhour-Remaining: 993
+X-Ratelimit-Perhour-Reset: 3044
+X-Rid: 176946448189348436841520465285229539905
+X-UA-Compatible: IE=Edge,chrome=1
+Transfer-Encoding: chunked
+
+{
+    "meta": {
+        "status": 200,
+        "msg": "OK"
+    },
+    "response": {
+        "object_type": "post",
+        "type": "blocks",
+        "id": 189889877719,
+        "tumblelog_uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+        "blog_name": "learningautomatingapis",
+        "blog": {
+            "name": "learningautomatingapis",
+            "title": "API Learning",
+            "description": "",
+            "url": "https://learningautomatingapis.tumblr.com/",
+            "uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+            "updated": 1577405941
+        },
+        "post_url": "https://learningautomatingapis.tumblr.com/post/189889877719/hello-this-is-my-second-post-from-restassured-api",
+        "slug": "hello-this-is-my-second-post-from-restassured-api",
+        "date": "2019-12-27 00:19:01 GMT",
+        "timestamp": 1577405941,
+        "state": "published",
+        "reblog_key": "Ccw9qFe2",
+        "tags": [
+            
+        ],
+        "short_url": "https://tmblr.co/ZJJHvV2msKPRN",
+        "summary": "Hello this is my second post from RestAssured api automation testing!",
+        "should_open_in_legacy": false,
+        "recommended_source": null,
+        "recommended_color": null,
+        "followed": false,
+        "liked": false,
+        "note_count": 0,
+        "content": [
+            {
+                "type": "text",
+                "text": "Hello this is my second post from RestAssured api automation testing!"
+            }
+        ],
+        "layout": [
+            
+        ],
+        "trail": [
+            
+        ],
+        "can_like": false,
+        "can_reblog": true,
+        "can_send_in_message": true,
+        "muted": false
+    }
+}
+Request method:	PUT
+Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/posts/189889877719
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=189889877719
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "content": [
+        {
+            "text": "Edited, Hello this is my second post from RestAssured api automation testing!",
+            "type": "text"
+        }
+    ]
+}
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Date: Fri, 27 Dec 2019 00:19:02 GMT
+Server: openresty
+Strict-Transport-Security: max-age=31536000; preload
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+X-Ratelimit-Perday-Limit: 5000
+X-Ratelimit-Perday-Remaining: 4805
+X-Ratelimit-Perday-Reset: 2706
+X-Ratelimit-Perhour-Limit: 1000
+X-Ratelimit-Perhour-Remaining: 992
+X-Ratelimit-Perhour-Reset: 3044
+X-Rid: 973491129332165055217658593461920372548
+X-UA-Compatible: IE=Edge,chrome=1
+Transfer-Encoding: chunked
+
+{
+    "meta": {
+        "status": 200,
+        "msg": "OK"
+    },
+    "response": {
+        "id": "189889877719",
+        "state": "published",
+        "display_text": "Edited on learningautomatingapis"
+    }
+}
+Request method:	GET
+Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/posts/189889877719
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=189889877719
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Date: Fri, 27 Dec 2019 00:19:03 GMT
+Server: openresty
+Strict-Transport-Security: max-age=31536000; preload
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+X-Ratelimit-Perday-Limit: 5000
+X-Ratelimit-Perday-Remaining: 4804
+X-Ratelimit-Perday-Reset: 2705
+X-Ratelimit-Perhour-Limit: 1000
+X-Ratelimit-Perhour-Remaining: 991
+X-Ratelimit-Perhour-Reset: 3043
+X-Rid: 1001955536793177136518355867195716901051
+X-UA-Compatible: IE=Edge,chrome=1
+Transfer-Encoding: chunked
+
+{
+    "meta": {
+        "status": 200,
+        "msg": "OK"
+    },
+    "response": {
+        "object_type": "post",
+        "type": "blocks",
+        "id": 189889877719,
+        "tumblelog_uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+        "blog_name": "learningautomatingapis",
+        "blog": {
+            "name": "learningautomatingapis",
+            "title": "API Learning",
+            "description": "",
+            "url": "https://learningautomatingapis.tumblr.com/",
+            "uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+            "updated": 1577405941
+        },
+        "post_url": "https://learningautomatingapis.tumblr.com/post/189889877719/edited-hello-this-is-my-second-post-from",
+        "slug": "edited-hello-this-is-my-second-post-from",
+        "date": "2019-12-27 00:19:01 GMT",
+        "timestamp": 1577405941,
+        "state": "published",
+        "reblog_key": "Ccw9qFe2",
+        "tags": [
+            
+        ],
+        "short_url": "https://tmblr.co/ZJJHvV2msKPRN",
+        "summary": "Edited, Hello this is my second post from RestAssured api automation testing!",
+        "should_open_in_legacy": false,
+        "recommended_source": null,
+        "recommended_color": null,
+        "followed": false,
+        "liked": false,
+        "note_count": 0,
+        "content": [
+            {
+                "type": "text",
+                "text": "Edited, Hello this is my second post from RestAssured api automation testing!"
+            }
+        ],
+        "layout": [
+            
+        ],
+        "trail": [
+            
+        ],
+        "can_like": false,
+        "can_reblog": true,
+        "can_send_in_message": true,
+        "muted": false
+    }
+}

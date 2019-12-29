@@ -1,0 +1,66 @@
+Request method:	POST
+Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/followers
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Date: Fri, 27 Dec 2019 00:20:35 GMT
+P3p: CP="Tumblr's privacy policy is available here: https://www.tumblr.com/policy/en/privacy"
+Server: openresty
+Strict-Transport-Security: max-age=31536000; preload
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+X-Ratelimit-Api-Followers-Limit: 60
+X-Ratelimit-Api-Followers-Remaining: 59
+X-Ratelimit-Api-Followers-Reset: 1577406095
+X-Ratelimit-Perday-Limit: 5000
+X-Ratelimit-Perday-Remaining: 4797
+X-Ratelimit-Perday-Reset: 2613
+X-Ratelimit-Perhour-Limit: 1000
+X-Ratelimit-Perhour-Remaining: 984
+X-Ratelimit-Perhour-Reset: 2951
+X-Rid: 48720982552396172149004215394129901351
+X-UA-Compatible: IE=Edge,chrome=1
+Transfer-Encoding: chunked
+
+{
+    "meta": {
+        "status": 200,
+        "msg": "OK"
+    },
+    "response": {
+        "total_users": 2,
+        "users": [
+            {
+                "name": "moreapiautomationlearning",
+                "url": "https://moreapiautomationlearning.tumblr.com/",
+                "updated": 1572023220,
+                "following": true
+            },
+            {
+                "name": "cheezbot",
+                "url": "https://cheezbot.tumblr.com/",
+                "updated": 1577356448,
+                "following": false
+            }
+        ],
+        "_links": {
+            "next": {
+                "href": "/v2/blog/learningautomatingapis/followers?offset=20",
+                "method": "POST",
+                "query_params": {
+                    "offset": "20"
+                }
+            }
+        }
+    }
+}

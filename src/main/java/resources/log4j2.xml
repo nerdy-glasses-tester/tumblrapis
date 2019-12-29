@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+ 
+ 
+     <Properties>
+    			<Property name="basePath">./log4jlogs</Property>
+    </Properties>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n" />
+		</Console>
+ 
+		<RollingFile name="RollingFile" filename="${basePath}/logs.log"
+			filepattern="${basePath}/logs-%d{YYYYMMddHHmmss}.log">
+			<PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %msg%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="100 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="20" />
+		</RollingFile>
+ 
+	</Appenders>
+	<Loggers>
+		<Root level="all">
+			<AppenderRef ref="Console" level="all"/>
+			<AppenderRef ref="RollingFile" level="all" />
+		</Root>
+	</Loggers>
+</Configuration>

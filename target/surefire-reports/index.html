@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-tumblrapis">
+              <span class="suite-name border-passed">tumblrapis</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-tumblrapis">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-tumblrapis">
+                    <span class="test-stats">6 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-tumblrapis">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-tumblrapis">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-tumblrapis">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-tumblrapis">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-tumblrapis">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-tumblrapis" class="hide-methods passed suite-tumblrapis"> (hide)</a> <!-- hide-methods passed suite-tumblrapis -->
+                      <a href="#" panel-name="suite-tumblrapis" class="show-methods passed suite-tumblrapis"> (show)</a> <!-- show-methods passed suite-tumblrapis -->
+                    </span>
+                    <div class="method-list-content passed suite-tumblrapis">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tumblrapis" title="tumblrapis.posts.TumblrGetLikesTest" hash-for-method="GetAllTumblrPostsTest">GetAllTumblrPostsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tumblrapis" title="tumblrapis.posts.TumblrGetFollowingTest" hash-for-method="GetAllTumblrPostsTest">GetAllTumblrPostsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tumblrapis" title="tumblrapis.posts.TumblrGetFollowersTest" hash-for-method="GetAllTumblrPostsTest">GetAllTumblrPostsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tumblrapis" title="tumblrapis.posts.TumblrGetAllPostsTest" hash-for-method="GetAllTumblrPostsTest">GetAllTumblrPostsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tumblrapis" title="tumblrapis.posts.TumblrPostandDeleteTest" hash-for-method="TumblrPostandDeleteTest_DeletePostTest">TumblrPostandDeleteTest_DeletePostTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tumblrapis" title="tumblrapis.posts.TumblrPostandDeleteTest" hash-for-method="TumblrPostandDeleteTest_PostTest">TumblrPostandDeleteTest_PostTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tumblrapis" title="tumblrapis.posts.TumblrPostandDeleteTest" hash-for-method="TumblrPostandDeleteTest_verfiyDeletePostTest">TumblrPostandDeleteTest_verfiyDeletePostTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tumblrapis" title="tumblrapis.posts.TumblrPostandDeleteTest" hash-for-method="TumblrPostandDeleteTest_verifyPostTest">TumblrPostandDeleteTest_verifyPostTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tumblrapis" title="tumblrapis.posts.TumblrPostandEditTest" hash-for-method="TumblrPostandEditTest_EditPostTest">TumblrPostandEditTest_EditPostTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tumblrapis" title="tumblrapis.posts.TumblrPostandEditTest" hash-for-method="TumblrPostandEditTest_PostTest">TumblrPostandEditTest_PostTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tumblrapis" title="tumblrapis.posts.TumblrPostandEditTest" hash-for-method="TumblrPostandEditTest_verfiyEditPostTest">TumblrPostandEditTest_verfiyEditPostTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-tumblrapis" title="tumblrapis.posts.TumblrPostandEditTest" hash-for-method="TumblrPostandEditTest_verifyPostTest">TumblrPostandEditTest_verifyPostTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-tumblrapis -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-tumblrapis" class="panel tumblrapis">
+          <div class="suite-tumblrapis-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tumblrapis.posts.TumblrGetAllPostsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllTumblrPostsTest">
+                  </a> <!-- GetAllTumblrPostsTest -->
+                  <span class="method-name">GetAllTumblrPostsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-tumblrapis-class-passed -->
+          <div class="suite-tumblrapis-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tumblrapis.posts.TumblrPostandEditTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TumblrPostandEditTest_EditPostTest">
+                  </a> <!-- TumblrPostandEditTest_EditPostTest -->
+                  <span class="method-name">TumblrPostandEditTest_EditPostTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TumblrPostandEditTest_PostTest">
+                  </a> <!-- TumblrPostandEditTest_PostTest -->
+                  <span class="method-name">TumblrPostandEditTest_PostTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TumblrPostandEditTest_verfiyEditPostTest">
+                  </a> <!-- TumblrPostandEditTest_verfiyEditPostTest -->
+                  <span class="method-name">TumblrPostandEditTest_verfiyEditPostTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TumblrPostandEditTest_verifyPostTest">
+                  </a> <!-- TumblrPostandEditTest_verifyPostTest -->
+                  <span class="method-name">TumblrPostandEditTest_verifyPostTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-tumblrapis-class-passed -->
+          <div class="suite-tumblrapis-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tumblrapis.posts.TumblrPostandDeleteTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TumblrPostandDeleteTest_DeletePostTest">
+                  </a> <!-- TumblrPostandDeleteTest_DeletePostTest -->
+                  <span class="method-name">TumblrPostandDeleteTest_DeletePostTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TumblrPostandDeleteTest_PostTest">
+                  </a> <!-- TumblrPostandDeleteTest_PostTest -->
+                  <span class="method-name">TumblrPostandDeleteTest_PostTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TumblrPostandDeleteTest_verfiyDeletePostTest">
+                  </a> <!-- TumblrPostandDeleteTest_verfiyDeletePostTest -->
+                  <span class="method-name">TumblrPostandDeleteTest_verfiyDeletePostTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TumblrPostandDeleteTest_verifyPostTest">
+                  </a> <!-- TumblrPostandDeleteTest_verifyPostTest -->
+                  <span class="method-name">TumblrPostandDeleteTest_verifyPostTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-tumblrapis-class-passed -->
+          <div class="suite-tumblrapis-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tumblrapis.posts.TumblrGetFollowersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllTumblrPostsTest">
+                  </a> <!-- GetAllTumblrPostsTest -->
+                  <span class="method-name">GetAllTumblrPostsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-tumblrapis-class-passed -->
+          <div class="suite-tumblrapis-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tumblrapis.posts.TumblrGetFollowingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllTumblrPostsTest">
+                  </a> <!-- GetAllTumblrPostsTest -->
+                  <span class="method-name">GetAllTumblrPostsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-tumblrapis-class-passed -->
+          <div class="suite-tumblrapis-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tumblrapis.posts.TumblrGetLikesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllTumblrPostsTest">
+                  </a> <!-- GetAllTumblrPostsTest -->
+                  <span class="method-name">GetAllTumblrPostsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-tumblrapis-class-passed -->
+        </div> <!-- panel tumblrapis -->
+        <div panel-name="test-xml-tumblrapis" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/macbookpro/eclipse-workspace/tumblrapis/src/test/resources/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;tumblrapis&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;resources.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Tumblr-Post-and-Edit&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tumblrapis.posts.TumblrPostandEditTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Tumblr-Post-and-Edit --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Tumblr-Get-Likes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tumblrapis.posts.TumblrGetLikesTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Tumblr-Get-Likes --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Tumblr-Post-and-Delete&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tumblrapis.posts.TumblrPostandDeleteTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Tumblr-Post-and-Delete --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Tumblr-Get-Following&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tumblrapis.posts.TumblrGetFollowingTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Tumblr-Get-Following --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Tumblr-Get-Followers&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tumblrapis.posts.TumblrGetFollowersTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Tumblr-Get-Followers --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Tumblr-Get-All-Posts&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tumblrapis.posts.TumblrGetAllPostsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Tumblr-Get-All-Posts --&gt;
+&lt;/suite&gt; &lt;!-- tumblrapis --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-tumblrapis" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for tumblrapis</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Tumblr-Post-and-Edit (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Tumblr-Get-Likes (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Tumblr-Post-and-Delete (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Tumblr-Get-Following (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Tumblr-Get-Followers (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Tumblr-Get-All-Posts (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-tumblrapis" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for tumblrapis</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-tumblrapis" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for tumblrapis</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_tumblrapis');
+function tableData_tumblrapis() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TumblrPostandEditTest_PostTest')
+data.setCell(0, 2, 'tumblrapis.posts.TumblrPostandEditTest')
+data.setCell(0, 3, 6502);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TumblrPostandDeleteTest_PostTest')
+data.setCell(1, 2, 'tumblrapis.posts.TumblrPostandDeleteTest')
+data.setCell(1, 3, 491);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'GetAllTumblrPostsTest')
+data.setCell(2, 2, 'tumblrapis.posts.TumblrGetLikesTest')
+data.setCell(2, 3, 367);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'GetAllTumblrPostsTest')
+data.setCell(3, 2, 'tumblrapis.posts.TumblrGetFollowingTest')
+data.setCell(3, 3, 350);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'GetAllTumblrPostsTest')
+data.setCell(4, 2, 'tumblrapis.posts.TumblrGetAllPostsTest')
+data.setCell(4, 3, 337);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TumblrPostandEditTest_verfiyEditPostTest')
+data.setCell(5, 2, 'tumblrapis.posts.TumblrPostandEditTest')
+data.setCell(5, 3, 304);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TumblrPostandEditTest_verifyPostTest')
+data.setCell(6, 2, 'tumblrapis.posts.TumblrPostandEditTest')
+data.setCell(6, 3, 298);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TumblrPostandDeleteTest_verifyPostTest')
+data.setCell(7, 2, 'tumblrapis.posts.TumblrPostandDeleteTest')
+data.setCell(7, 3, 298);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'GetAllTumblrPostsTest')
+data.setCell(8, 2, 'tumblrapis.posts.TumblrGetFollowersTest')
+data.setCell(8, 3, 296);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TumblrPostandDeleteTest_verfiyDeletePostTest')
+data.setCell(9, 2, 'tumblrapis.posts.TumblrPostandDeleteTest')
+data.setCell(9, 3, 291);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TumblrPostandEditTest_EditPostTest')
+data.setCell(10, 2, 'tumblrapis.posts.TumblrPostandEditTest')
+data.setCell(10, 3, 288);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TumblrPostandDeleteTest_DeletePostTest')
+data.setCell(11, 2, 'tumblrapis.posts.TumblrPostandDeleteTest')
+data.setCell(11, 3, 267);
+window.suiteTableData['tumblrapis']= { tableData: data, tableDiv: 'times-div-tumblrapis'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <div id="times-div-tumblrapis">
+              </div> <!-- times-div-tumblrapis -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-tumblrapis" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for tumblrapis</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-tumblrapis" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-tumblrapis" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tumblrapis.posts.TumblrPostandEditTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">254 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TumblrPostandEditTest_PostTest</span>
+                <span class="method-start">255 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">6758 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">6760 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TumblrPostandEditTest_verifyPostTest</span>
+                <span class="method-start">6760 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7058 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">7059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TumblrPostandEditTest_EditPostTest</span>
+                <span class="method-start">7060 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7349 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">7350 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TumblrPostandEditTest_verfiyEditPostTest</span>
+                <span class="method-start">7350 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7654 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tumblrapis.posts.TumblrGetLikesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">37852 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">37853 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">GetAllTumblrPostsTest</span>
+                <span class="method-start">37853 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38220 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tumblrapis.posts.TumblrPostandDeleteTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">63275 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">63276 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TumblrPostandDeleteTest_PostTest</span>
+                <span class="method-start">63276 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63767 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">63768 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TumblrPostandDeleteTest_verifyPostTest</span>
+                <span class="method-start">63768 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">64066 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">64067 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TumblrPostandDeleteTest_DeletePostTest</span>
+                <span class="method-start">64067 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">64335 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">64336 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TumblrPostandDeleteTest_verfiyDeletePostTest</span>
+                <span class="method-start">64336 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">64627 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tumblrapis.posts.TumblrGetFollowingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">84675 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">84675 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">GetAllTumblrPostsTest</span>
+                <span class="method-start">84676 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">85026 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tumblrapis.posts.TumblrGetFollowersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">100070 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">100070 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">GetAllTumblrPostsTest</span>
+                <span class="method-start">100070 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">100366 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tumblrapis.posts.TumblrGetAllPostsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">110398 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">110399 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">GetAllTumblrPostsTest</span>
+                <span class="method-start">110399 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">110736 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

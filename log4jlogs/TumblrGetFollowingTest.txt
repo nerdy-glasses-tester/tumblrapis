@@ -1,0 +1,70 @@
+Request method:	POST
+Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/following
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Date: Fri, 27 Dec 2019 00:20:20 GMT
+P3p: CP="Tumblr's privacy policy is available here: https://www.tumblr.com/policy/en/privacy"
+Server: openresty
+Strict-Transport-Security: max-age=31536000; preload
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+X-Ratelimit-Api-Following-Limit: 60
+X-Ratelimit-Api-Following-Remaining: 59
+X-Ratelimit-Api-Following-Reset: 1577406080
+X-Ratelimit-Perday-Limit: 5000
+X-Ratelimit-Perday-Remaining: 4798
+X-Ratelimit-Perday-Reset: 2628
+X-Ratelimit-Perhour-Limit: 1000
+X-Ratelimit-Perhour-Remaining: 985
+X-Ratelimit-Perhour-Reset: 2966
+X-Rid: 172703357934302379713171018041313521536
+X-UA-Compatible: IE=Edge,chrome=1
+Transfer-Encoding: chunked
+
+{
+    "meta": {
+        "status": 200,
+        "msg": "OK"
+    },
+    "response": {
+        "blogs": [
+            {
+                "name": "moreapiautomationlearning",
+                "title": "More API Learning",
+                "description": "",
+                "url": "https://moreapiautomationlearning.tumblr.com/",
+                "uuid": "t:jUdCHrVfzEshDB1YZ9ibww",
+                "updated": 1572023220
+            },
+            {
+                "name": "staff",
+                "title": "Tumblr Staff",
+                "description": "",
+                "url": "https://staff.tumblr.com/",
+                "uuid": "t:0aY0xL2Fi1OFJg4YxpmegQ",
+                "updated": 1576782408
+            }
+        ],
+        "total_blogs": 2,
+        "_links": {
+            "next": {
+                "href": "/v2/blog/learningautomatingapis/following?offset=20",
+                "method": "POST",
+                "query_params": {
+                    "offset": "20"
+                }
+            }
+        }
+    }
+}

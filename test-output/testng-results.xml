@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1643" started-at="2019-10-25T18:22:43Z" finished-at="2019-10-25T18:22:45Z">
+  <suite name="Default suite" duration-ms="6299" started-at="2019-12-25T23:46:30Z" finished-at="2019-12-25T23:46:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1643" started-at="2019-10-25T18:22:43Z" finished-at="2019-10-25T18:22:45Z">
-      <class name="tumblrapis.posts.TumblrGetLikes">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tumblrapis.posts.TumblrGetLikes@6093dd95]" name="setup" is-config="true" duration-ms="251" started-at="2019-10-25T18:22:43Z" finished-at="2019-10-25T18:22:44Z">
+    <test name="Default test" duration-ms="6299" started-at="2019-12-25T23:46:30Z" finished-at="2019-12-25T23:46:36Z">
+      <class name="tumblrapis.posts.TumblrPostandEditTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@48f2bd5b]" name="setup" is-config="true" duration-ms="327" started-at="2019-12-25T23:46:30Z" finished-at="2019-12-25T23:46:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="GetAllTumblrPosts()[pri:0, instance:tumblrapis.posts.TumblrGetLikes@6093dd95]" name="GetAllTumblrPosts" duration-ms="1381" started-at="2019-10-25T18:22:44Z" finished-at="2019-10-25T18:22:45Z">
+        <test-method status="PASS" signature="TumblrPostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@48f2bd5b]" name="TumblrPostTest" duration-ms="5034" started-at="2019-12-25T23:46:30Z" finished-at="2019-12-25T23:46:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetAllTumblrPosts -->
-      </class> <!-- tumblrapis.posts.TumblrGetLikes -->
+        </test-method> <!-- TumblrPostTest -->
+        <test-method status="PASS" signature="verifyTumblrPostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@48f2bd5b]" name="verifyTumblrPostTest" duration-ms="343" started-at="2019-12-25T23:46:35Z" depends-on-methods="tumblrapis.posts.TumblrPostandEditTest.TumblrPostTest" finished-at="2019-12-25T23:46:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTumblrPostTest -->
+        <test-method status="PASS" signature="EditTumblrPostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@48f2bd5b]" name="EditTumblrPostTest" duration-ms="288" started-at="2019-12-25T23:46:36Z" depends-on-methods="tumblrapis.posts.TumblrPostandEditTest.verifyTumblrPostTest" finished-at="2019-12-25T23:46:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditTumblrPostTest -->
+        <test-method status="PASS" signature="verfiyEditTumblrPostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@48f2bd5b]" name="verfiyEditTumblrPostTest" duration-ms="287" started-at="2019-12-25T23:46:36Z" depends-on-methods="tumblrapis.posts.TumblrPostandEditTest.EditTumblrPostTest" finished-at="2019-12-25T23:46:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyEditTumblrPostTest -->
+      </class> <!-- tumblrapis.posts.TumblrPostandEditTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
