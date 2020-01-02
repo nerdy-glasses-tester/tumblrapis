@@ -1,5 +1,6 @@
 resources/ExtentTestManager.class
 tumblrapis/constants/Auth.class
+tumblrapis/common/RestUtilities.class
 models/PostTextModel.class
 resources/ExtentReporterNG.class
 resources/ExtentManager.class

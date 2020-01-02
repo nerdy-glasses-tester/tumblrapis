@@ -3,15 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tumblrapis.posts.TumblrPostandEditTest">
+      <class name="tumblrapis.posts.TumblrGetAllPostsTest">
         <methods>
-          <include name="EditTumblrPostTest"/>
-          <include name="verfiyEditTumblrPostTest"/>
-          <include name="verifyTumblrPostTest"/>
+          <include name="methodsetup"/>
+          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="TumblrPostTest"/>
+          <include name="GetAllTumblrPostsTest"/>
         </methods>
-      </class> <!-- tumblrapis.posts.TumblrPostandEditTest -->
+      </class> <!-- tumblrapis.posts.TumblrGetAllPostsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

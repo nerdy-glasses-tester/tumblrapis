@@ -1,10 +1,10 @@
 Request method:	POST
-Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/followers
+Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/posts/text?api_key=CcrGRBR1hONmlG1VU1IYRfTvmWVvxXzXyM4GmtLiSDTgytGTKR
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	<none>
+Path params:	API_KEY=CcrGRBR1hONmlG1VU1IYRfTvmWVvxXzXyM4GmtLiSDTgytGTKR
 Headers:		Accept=*/*
 				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		<none>
@@ -13,22 +13,19 @@ Body:			<none>
 HTTP/1.1 200 OK
 Content-Encoding: gzip
 Content-Type: application/json; charset=utf-8
-Date: Fri, 27 Dec 2019 00:20:35 GMT
+Date: Thu, 02 Jan 2020 19:36:23 GMT
 P3p: CP="Tumblr's privacy policy is available here: https://www.tumblr.com/policy/en/privacy"
 Server: openresty
 Strict-Transport-Security: max-age=31536000; preload
 Vary: Accept-Encoding
 Vary: Accept-Encoding
-X-Ratelimit-Api-Followers-Limit: 60
-X-Ratelimit-Api-Followers-Remaining: 59
-X-Ratelimit-Api-Followers-Reset: 1577406095
 X-Ratelimit-Perday-Limit: 5000
-X-Ratelimit-Perday-Remaining: 4797
-X-Ratelimit-Perday-Reset: 2613
+X-Ratelimit-Perday-Remaining: 4852
+X-Ratelimit-Perday-Reset: 8890
 X-Ratelimit-Perhour-Limit: 1000
-X-Ratelimit-Perhour-Remaining: 984
-X-Ratelimit-Perhour-Reset: 2951
-X-Rid: 48720982552396172149004215394129901351
+X-Ratelimit-Perhour-Remaining: 969
+X-Ratelimit-Perhour-Reset: 2291
+X-Rid: 12044711442751099211770451146521891872
 X-UA-Compatible: IE=Edge,chrome=1
 Transfer-Encoding: chunked
 
@@ -38,27 +35,526 @@ Transfer-Encoding: chunked
         "msg": "OK"
     },
     "response": {
-        "total_users": 2,
-        "users": [
+        "blog": {
+            "admin": true,
+            "ask": false,
+            "ask_anon": false,
+            "ask_page_title": "Ask me anything",
+            "can_chat": true,
+            "can_send_fan_mail": true,
+            "can_subscribe": false,
+            "description": "",
+            "drafts": 0,
+            "facebook": "N",
+            "facebook_opengraph_enabled": "N",
+            "followed": false,
+            "followers": 2,
+            "is_blocked_from_primary": false,
+            "is_nsfw": false,
+            "likes": 2,
+            "messages": 0,
+            "name": "learningautomatingapis",
+            "posts": 6,
+            "primary": true,
+            "queue": 0,
+            "share_likes": true,
+            "subscribed": false,
+            "title": "API Learning",
+            "total_posts": 6,
+            "tweet": "N",
+            "twitter_enabled": false,
+            "twitter_send": false,
+            "type": "public",
+            "updated": 1577993709,
+            "url": "https://learningautomatingapis.tumblr.com/",
+            "uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+            "is_optout_ads": false
+        },
+        "posts": [
             {
-                "name": "moreapiautomationlearning",
-                "url": "https://moreapiautomationlearning.tumblr.com/",
-                "updated": 1572023220,
-                "following": true
+                "type": "text",
+                "blog_name": "learningautomatingapis",
+                "blog": {
+                    "name": "learningautomatingapis",
+                    "title": "API Learning",
+                    "description": "",
+                    "url": "https://learningautomatingapis.tumblr.com/",
+                    "uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+                    "updated": 1577993709
+                },
+                "id": 190020995459,
+                "post_url": "https://learningautomatingapis.tumblr.com/post/190020995459/edited-hello-this-is-my-second-post-from",
+                "slug": "edited-hello-this-is-my-second-post-from",
+                "date": "2020-01-02 19:35:09 GMT",
+                "timestamp": 1577993709,
+                "state": "published",
+                "format": "html",
+                "reblog_key": "ymwWmFu4",
+                "tags": [
+                    
+                ],
+                "short_url": "https://tmblr.co/ZJJHvV2m_8ac3",
+                "summary": "Edited, Hello this is my second post from RestAssured api automation testing!",
+                "should_open_in_legacy": false,
+                "recommended_source": null,
+                "recommended_color": null,
+                "followed": false,
+                "liked": false,
+                "note_count": 0,
+                "title": "",
+                "body": "<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
+                "reblog": {
+                    "comment": "<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
+                    "tree_html": ""
+                },
+                "trail": [
+                    {
+                        "blog": {
+                            "name": "learningautomatingapis",
+                            "active": true,
+                            "theme": {
+                                "avatar_shape": "circle",
+                                "background_color": "#FAFAFA",
+                                "body_font": "Helvetica Neue",
+                                "header_bounds": 0,
+                                "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_stretch": true,
+                                "link_color": "#529ECC",
+                                "show_avatar": true,
+                                "show_description": true,
+                                "show_header_image": true,
+                                "show_title": true,
+                                "title_color": "#444444",
+                                "title_font": "Gibson",
+                                "title_font_weight": "bold"
+                            },
+                            "share_likes": true,
+                            "share_following": true,
+                            "can_be_followed": false
+                        },
+                        "post": {
+                            "id": 190020995459
+                        },
+                        "content_raw": "<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
+                        "content": "<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
+                        "is_current_item": true,
+                        "is_root_item": true
+                    }
+                ],
+                "can_like": false,
+                "can_reblog": true,
+                "can_send_in_message": true,
+                "muted": false,
+                "can_reply": true,
+                "display_avatar": true
             },
             {
-                "name": "cheezbot",
-                "url": "https://cheezbot.tumblr.com/",
-                "updated": 1577356448,
-                "following": false
+                "type": "text",
+                "blog_name": "learningautomatingapis",
+                "blog": {
+                    "name": "learningautomatingapis",
+                    "title": "API Learning",
+                    "description": "",
+                    "url": "https://learningautomatingapis.tumblr.com/",
+                    "uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+                    "updated": 1577993709
+                },
+                "id": 190020933724,
+                "post_url": "https://learningautomatingapis.tumblr.com/post/190020933724/edited-hello-this-is-my-second-post-from",
+                "slug": "edited-hello-this-is-my-second-post-from",
+                "date": "2020-01-02 19:31:28 GMT",
+                "timestamp": 1577993488,
+                "state": "published",
+                "format": "html",
+                "reblog_key": "KEcC12iZ",
+                "tags": [
+                    
+                ],
+                "short_url": "https://tmblr.co/ZJJHvV2m_8LXS",
+                "summary": "Edited, Hello this is my second post from RestAssured api automation testing!",
+                "should_open_in_legacy": false,
+                "recommended_source": null,
+                "recommended_color": null,
+                "followed": false,
+                "liked": false,
+                "note_count": 0,
+                "title": "",
+                "body": "<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
+                "reblog": {
+                    "comment": "<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
+                    "tree_html": ""
+                },
+                "trail": [
+                    {
+                        "blog": {
+                            "name": "learningautomatingapis",
+                            "active": true,
+                            "theme": {
+                                "avatar_shape": "circle",
+                                "background_color": "#FAFAFA",
+                                "body_font": "Helvetica Neue",
+                                "header_bounds": 0,
+                                "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_stretch": true,
+                                "link_color": "#529ECC",
+                                "show_avatar": true,
+                                "show_description": true,
+                                "show_header_image": true,
+                                "show_title": true,
+                                "title_color": "#444444",
+                                "title_font": "Gibson",
+                                "title_font_weight": "bold"
+                            },
+                            "share_likes": true,
+                            "share_following": true,
+                            "can_be_followed": false
+                        },
+                        "post": {
+                            "id": 190020933724
+                        },
+                        "content_raw": "<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
+                        "content": "<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
+                        "is_current_item": true,
+                        "is_root_item": true
+                    }
+                ],
+                "can_like": false,
+                "can_reblog": true,
+                "can_send_in_message": true,
+                "muted": false,
+                "can_reply": true,
+                "display_avatar": true
+            },
+            {
+                "type": "text",
+                "blog_name": "learningautomatingapis",
+                "blog": {
+                    "name": "learningautomatingapis",
+                    "title": "API Learning",
+                    "description": "",
+                    "url": "https://learningautomatingapis.tumblr.com/",
+                    "uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+                    "updated": 1577993709
+                },
+                "id": 190020868454,
+                "post_url": "https://learningautomatingapis.tumblr.com/post/190020868454/hello-this-is-my-second-post-from-restassured-api",
+                "slug": "hello-this-is-my-second-post-from-restassured-api",
+                "date": "2020-01-02 19:27:47 GMT",
+                "timestamp": 1577993267,
+                "state": "published",
+                "format": "html",
+                "reblog_key": "SDt5PI53",
+                "tags": [
+                    
+                ],
+                "short_url": "https://tmblr.co/ZJJHvV2m_85bc",
+                "summary": "Hello this is my second post from RestAssured api automation testing!",
+                "should_open_in_legacy": false,
+                "recommended_source": null,
+                "recommended_color": null,
+                "followed": false,
+                "liked": false,
+                "note_count": 0,
+                "title": "",
+                "body": "<p>Hello this is my second post from RestAssured api automation testing!</p>",
+                "reblog": {
+                    "comment": "<p>Hello this is my second post from RestAssured api automation testing!</p>",
+                    "tree_html": ""
+                },
+                "trail": [
+                    {
+                        "blog": {
+                            "name": "learningautomatingapis",
+                            "active": true,
+                            "theme": {
+                                "avatar_shape": "circle",
+                                "background_color": "#FAFAFA",
+                                "body_font": "Helvetica Neue",
+                                "header_bounds": 0,
+                                "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_stretch": true,
+                                "link_color": "#529ECC",
+                                "show_avatar": true,
+                                "show_description": true,
+                                "show_header_image": true,
+                                "show_title": true,
+                                "title_color": "#444444",
+                                "title_font": "Gibson",
+                                "title_font_weight": "bold"
+                            },
+                            "share_likes": true,
+                            "share_following": true,
+                            "can_be_followed": false
+                        },
+                        "post": {
+                            "id": "190020868454"
+                        },
+                        "content_raw": "<p>Hello this is my second post from RestAssured api automation testing!</p>",
+                        "content": "<p>Hello this is my second post from RestAssured api automation testing!</p>",
+                        "is_current_item": true,
+                        "is_root_item": true
+                    }
+                ],
+                "can_like": false,
+                "can_reblog": true,
+                "can_send_in_message": true,
+                "muted": false,
+                "can_reply": true,
+                "display_avatar": true
+            },
+            {
+                "type": "text",
+                "blog_name": "learningautomatingapis",
+                "blog": {
+                    "name": "learningautomatingapis",
+                    "title": "API Learning",
+                    "description": "",
+                    "url": "https://learningautomatingapis.tumblr.com/",
+                    "uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+                    "updated": 1577993709
+                },
+                "id": 190020824934,
+                "post_url": "https://learningautomatingapis.tumblr.com/post/190020824934/hello-this-is-my-second-post-from-restassured-api",
+                "slug": "hello-this-is-my-second-post-from-restassured-api",
+                "date": "2020-01-02 19:25:11 GMT",
+                "timestamp": 1577993111,
+                "state": "published",
+                "format": "html",
+                "reblog_key": "IBKYbOB7",
+                "tags": [
+                    
+                ],
+                "short_url": "https://tmblr.co/ZJJHvV2m_7wzc",
+                "summary": "Hello this is my second post from RestAssured api automation testing!",
+                "should_open_in_legacy": false,
+                "recommended_source": null,
+                "recommended_color": null,
+                "followed": false,
+                "liked": false,
+                "note_count": 0,
+                "title": "",
+                "body": "<p>Hello this is my second post from RestAssured api automation testing!</p>",
+                "reblog": {
+                    "comment": "<p>Hello this is my second post from RestAssured api automation testing!</p>",
+                    "tree_html": ""
+                },
+                "trail": [
+                    {
+                        "blog": {
+                            "name": "learningautomatingapis",
+                            "active": true,
+                            "theme": {
+                                "avatar_shape": "circle",
+                                "background_color": "#FAFAFA",
+                                "body_font": "Helvetica Neue",
+                                "header_bounds": 0,
+                                "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_stretch": true,
+                                "link_color": "#529ECC",
+                                "show_avatar": true,
+                                "show_description": true,
+                                "show_header_image": true,
+                                "show_title": true,
+                                "title_color": "#444444",
+                                "title_font": "Gibson",
+                                "title_font_weight": "bold"
+                            },
+                            "share_likes": true,
+                            "share_following": true,
+                            "can_be_followed": false
+                        },
+                        "post": {
+                            "id": "190020824934"
+                        },
+                        "content_raw": "<p>Hello this is my second post from RestAssured api automation testing!</p>",
+                        "content": "<p>Hello this is my second post from RestAssured api automation testing!</p>",
+                        "is_current_item": true,
+                        "is_root_item": true
+                    }
+                ],
+                "can_like": false,
+                "can_reblog": true,
+                "can_send_in_message": true,
+                "muted": false,
+                "can_reply": true,
+                "display_avatar": true
+            },
+            {
+                "type": "text",
+                "blog_name": "learningautomatingapis",
+                "blog": {
+                    "name": "learningautomatingapis",
+                    "title": "API Learning",
+                    "description": "",
+                    "url": "https://learningautomatingapis.tumblr.com/",
+                    "uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+                    "updated": 1577993709
+                },
+                "id": 188573463554,
+                "post_url": "https://learningautomatingapis.tumblr.com/post/188573463554/hello-this-is-my-first-post-from-restassured-api",
+                "slug": "hello-this-is-my-first-post-from-restassured-api",
+                "date": "2019-10-25 01:41:09 GMT",
+                "timestamp": 1571967669,
+                "state": "published",
+                "format": "html",
+                "reblog_key": "ahSTntdM",
+                "tags": [
+                    
+                ],
+                "short_url": "https://tmblr.co/ZJJHvV2ldshG2",
+                "summary": "Hello this is my first post from RestAssured api automation testing!",
+                "should_open_in_legacy": false,
+                "recommended_source": null,
+                "recommended_color": null,
+                "followed": false,
+                "liked": false,
+                "note_count": 1,
+                "title": null,
+                "body": "<p>Hello this is my first post from RestAssured api automation testing!</p>",
+                "reblog": {
+                    "comment": "<p>Hello this is my first post from RestAssured api automation testing!</p>",
+                    "tree_html": ""
+                },
+                "trail": [
+                    {
+                        "blog": {
+                            "name": "learningautomatingapis",
+                            "active": true,
+                            "theme": {
+                                "avatar_shape": "circle",
+                                "background_color": "#FAFAFA",
+                                "body_font": "Helvetica Neue",
+                                "header_bounds": 0,
+                                "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_stretch": true,
+                                "link_color": "#529ECC",
+                                "show_avatar": true,
+                                "show_description": true,
+                                "show_header_image": true,
+                                "show_title": true,
+                                "title_color": "#444444",
+                                "title_font": "Gibson",
+                                "title_font_weight": "bold"
+                            },
+                            "share_likes": true,
+                            "share_following": true,
+                            "can_be_followed": false
+                        },
+                        "post": {
+                            "id": "188573463554"
+                        },
+                        "content_raw": "<p>Hello this is my first post from RestAssured api automation testing!</p>",
+                        "content": "<p>Hello this is my first post from RestAssured api automation testing!</p>",
+                        "is_current_item": true,
+                        "is_root_item": true
+                    }
+                ],
+                "can_like": false,
+                "can_reblog": true,
+                "can_send_in_message": true,
+                "muted": false,
+                "can_reply": true,
+                "display_avatar": true
+            },
+            {
+                "type": "text",
+                "blog_name": "learningautomatingapis",
+                "blog": {
+                    "name": "learningautomatingapis",
+                    "title": "API Learning",
+                    "description": "",
+                    "url": "https://learningautomatingapis.tumblr.com/",
+                    "uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+                    "updated": 1577993709
+                },
+                "id": 188550063614,
+                "post_url": "https://learningautomatingapis.tumblr.com/post/188550063614/edited-hello-this-is-my-first-post-from-postman",
+                "slug": "edited-hello-this-is-my-first-post-from-postman",
+                "date": "2019-10-24 00:22:56 GMT",
+                "timestamp": 1571876576,
+                "state": "published",
+                "format": "html",
+                "reblog_key": "CKpSsaju",
+                "tags": [
+                    
+                ],
+                "short_url": "https://tmblr.co/ZJJHvV2lcTQN_",
+                "summary": "Edited, Hello this is my first post from postman!",
+                "should_open_in_legacy": false,
+                "recommended_source": null,
+                "recommended_color": null,
+                "followed": false,
+                "liked": false,
+                "note_count": 2,
+                "title": "",
+                "body": "<p>Edited, Hello this is my first post from postman!</p>",
+                "reblog": {
+                    "comment": "<p>Edited, Hello this is my first post from postman!</p>",
+                    "tree_html": ""
+                },
+                "trail": [
+                    {
+                        "blog": {
+                            "name": "learningautomatingapis",
+                            "active": true,
+                            "theme": {
+                                "avatar_shape": "circle",
+                                "background_color": "#FAFAFA",
+                                "body_font": "Helvetica Neue",
+                                "header_bounds": 0,
+                                "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_image_focused": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_image_scaled": "https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                                "header_stretch": true,
+                                "link_color": "#529ECC",
+                                "show_avatar": true,
+                                "show_description": true,
+                                "show_header_image": true,
+                                "show_title": true,
+                                "title_color": "#444444",
+                                "title_font": "Gibson",
+                                "title_font_weight": "bold"
+                            },
+                            "share_likes": true,
+                            "share_following": true,
+                            "can_be_followed": false
+                        },
+                        "post": {
+                            "id": "188550063614"
+                        },
+                        "content_raw": "<p>Edited, Hello this is my first post from postman!</p>",
+                        "content": "<p>Edited, Hello this is my first post from postman!</p>",
+                        "is_current_item": true,
+                        "is_root_item": true
+                    }
+                ],
+                "can_like": false,
+                "can_reblog": true,
+                "can_send_in_message": true,
+                "muted": false,
+                "can_reply": true,
+                "display_avatar": true
             }
         ],
+        "total_posts": 6,
         "_links": {
             "next": {
-                "href": "/v2/blog/learningautomatingapis/followers?offset=20",
+                "href": "/v2/blog/learningautomatingapis/posts/text?type=text&offset=20&page_number=2",
                 "method": "POST",
                 "query_params": {
-                    "offset": "20"
+                    "type": "text",
+                    "offset": "20",
+                    "page_number": "2"
                 }
             }
         }

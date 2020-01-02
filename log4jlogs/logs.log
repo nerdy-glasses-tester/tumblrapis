@@ -1,18 +1,18 @@
-2019-12-26 16:19:00 [main] INFO  TumblrPostandEditTest:94 - Running TumblrPostTest
-2019-12-26 16:19:02 [main] INFO  TumblrPostandEditTest:125 - The body response is {
+2020-01-02 11:34:34 [main] INFO  TumblrPostandDeleteTest:99 - Running TumblrPostTest
+2020-01-02 11:34:38 [main] INFO  TumblrPostandDeleteTest:130 - The body response is {
   "meta":{
     "status":201,
     "msg":"Created"
   },
   "response":{
-    "id":"189889877719",
+    "id":"190020986234",
     "state":"published",
     "display_text":"Posted to learningautomatingapis"
   }
 }
-2019-12-26 16:19:02 [main] INFO  TumblrPostandEditTest:129 - The post id is 189889877719
-2019-12-26 16:19:02 [main] INFO  TumblrPostandEditTest:145 - Running verifyTumblrPostTest
-2019-12-26 16:19:02 [main] INFO  TumblrPostandEditTest:164 - The body response is {
+2020-01-02 11:34:38 [main] INFO  TumblrPostandDeleteTest:134 - The post id is190020986234
+2020-01-02 11:34:38 [main] INFO  TumblrPostandDeleteTest:149 - Running verifyTumblrPostTest
+2020-01-02 11:34:38 [main] INFO  TumblrPostandDeleteTest:170 - The body response is {
   "meta":{
     "status":200,
     "msg":"OK"
@@ -20,7 +20,7 @@
   "response":{
     "object_type":"post",
     "type":"blocks",
-    "id":189889877719,
+    "id":190020986234,
     "tumblelog_uuid":"t:qXeD3DbBONfNgCTmHErbKw",
     "blog_name":"learningautomatingapis",
     "blog":{
@@ -29,16 +29,104 @@
       "description":"",
       "url":"https://learningautomatingapis.tumblr.com/",
       "uuid":"t:qXeD3DbBONfNgCTmHErbKw",
-      "updated":1577405941
+      "updated":1577993677
     },
-    "post_url":"https://learningautomatingapis.tumblr.com/post/189889877719/hello-this-is-my-second-post-from-restassured-api",
-    "slug":"hello-this-is-my-second-post-from-restassured-api",
-    "date":"2019-12-27 00:19:01 GMT",
-    "timestamp":1577405941,
+    "post_url":"https://learningautomatingapis.tumblr.com/post/190020986234/hello-this-post-will-be-deleted-via-restassured",
+    "slug":"hello-this-post-will-be-deleted-via-restassured",
+    "date":"2020-01-02 19:34:37 GMT",
+    "timestamp":1577993677,
     "state":"published",
-    "reblog_key":"Ccw9qFe2",
+    "reblog_key":"DQGApKrQ",
     "tags":[],
-    "short_url":"https://tmblr.co/ZJJHvV2msKPRN",
+    "short_url":"https://tmblr.co/ZJJHvV2m_8YLw",
+    "summary":"Hello this post will be deleted via RestAssured api automation testing!",
+    "should_open_in_legacy":false,
+    "recommended_source":null,
+    "recommended_color":null,
+    "followed":false,
+    "liked":false,
+    "note_count":0,
+    "content":[
+      {
+        "type":"text",
+        "text":"Hello this post will be deleted via RestAssured api automation testing!"
+      }
+    ],
+    "layout":[],
+    "trail":[],
+    "can_like":false,
+    "can_reblog":true,
+    "can_send_in_message":true,
+    "muted":false
+  }
+}
+2020-01-02 11:34:38 [main] INFO  TumblrPostandDeleteTest:178 - The post's text is: Hello this post will be deleted via RestAssured api automation testing!
+2020-01-02 11:34:38 [main] INFO  TumblrPostandDeleteTest:201 - Running DeleteTumblrPostTest
+2020-01-02 11:34:38 [main] INFO  TumblrPostandDeleteTest:220 - The body response is {
+  "meta":{
+    "status":200,
+    "msg":"OK"
+  },
+  "response":{
+    "id":190020986234
+  }
+}
+2020-01-02 11:34:38 [main] INFO  TumblrPostandDeleteTest:238 - Running verifyDeleteTumblrPostTest
+2020-01-02 11:34:38 [main] INFO  TumblrPostandDeleteTest:256 - The body response is {
+  "meta":{
+    "status":404,
+    "msg":"Not Found"
+  },
+  "response":[],
+  "errors":[
+    {
+      "title":"Not Found",
+      "code":0,
+      "detail":"Something broke. Try again."
+    }
+  ]
+}
+2020-01-02 11:35:09 [main] INFO  TumblrPostandEditTest:100 - Running TumblrPostTest
+2020-01-02 11:35:09 [main] INFO  TumblrPostandEditTest:130 - The body response is {
+  "meta":{
+    "status":201,
+    "msg":"Created"
+  },
+  "response":{
+    "id":"190020995459",
+    "state":"published",
+    "display_text":"Posted to learningautomatingapis"
+  }
+}
+2020-01-02 11:35:09 [main] INFO  TumblrPostandEditTest:134 - The post id is 190020995459
+2020-01-02 11:35:09 [main] INFO  TumblrPostandEditTest:150 - Running verifyTumblrPostTest
+2020-01-02 11:35:10 [main] INFO  TumblrPostandEditTest:169 - The body response is {
+  "meta":{
+    "status":200,
+    "msg":"OK"
+  },
+  "response":{
+    "object_type":"post",
+    "type":"blocks",
+    "id":190020995459,
+    "tumblelog_uuid":"t:qXeD3DbBONfNgCTmHErbKw",
+    "blog_name":"learningautomatingapis",
+    "blog":{
+      "name":"learningautomatingapis",
+      "title":"API Learning",
+      "description":"",
+      "url":"https://learningautomatingapis.tumblr.com/",
+      "uuid":"t:qXeD3DbBONfNgCTmHErbKw",
+      "updated":1577993709
+    },
+    "post_url":"https://learningautomatingapis.tumblr.com/post/190020995459/hello-this-is-my-second-post-from-restassured-api",
+    "slug":"hello-this-is-my-second-post-from-restassured-api",
+    "date":"2020-01-02 19:35:09 GMT",
+    "timestamp":1577993709,
+    "state":"published",
+    "reblog_key":"ymwWmFu4",
+    "tags":[],
+    "short_url":"https://tmblr.co/ZJJHvV2m_8ac3",
     "summary":"Hello this is my second post from RestAssured api automation testing!",
     "should_open_in_legacy":false,
     "recommended_source":null,
@@ -60,20 +148,20 @@
     "muted":false
   }
 }
-2019-12-26 16:19:02 [main] INFO  TumblrPostandEditTest:189 - Running EditTumblrPostTest
-2019-12-26 16:19:02 [main] INFO  TumblrPostandEditTest:221 - The body response is {
+2020-01-02 11:35:10 [main] INFO  TumblrPostandEditTest:194 - Running EditTumblrPostTest
+2020-01-02 11:35:10 [main] INFO  TumblrPostandEditTest:224 - The body response is {
   "meta":{
     "status":200,
     "msg":"OK"
   },
   "response":{
-    "id":"189889877719",
+    "id":"190020995459",
     "state":"published",
     "display_text":"Edited on learningautomatingapis"
   }
 }
-2019-12-26 16:19:02 [main] INFO  TumblrPostandEditTest:237 - Running verifyEditTumblrPostTest
-2019-12-26 16:19:03 [main] INFO  TumblrPostandEditTest:256 - The body response is {
+2020-01-02 11:35:10 [main] INFO  TumblrPostandEditTest:240 - Running verifyEditTumblrPostTest
+2020-01-02 11:35:11 [main] INFO  TumblrPostandEditTest:259 - The body response is {
   "meta":{
     "status":200,
     "msg":"OK"
@@ -81,7 +169,7 @@
   "response":{
     "object_type":"post",
     "type":"blocks",
-    "id":189889877719,
+    "id":190020995459,
     "tumblelog_uuid":"t:qXeD3DbBONfNgCTmHErbKw",
     "blog_name":"learningautomatingapis",
     "blog":{
@@ -90,16 +178,16 @@
       "description":"",
       "url":"https://learningautomatingapis.tumblr.com/",
       "uuid":"t:qXeD3DbBONfNgCTmHErbKw",
-      "updated":1577405941
+      "updated":1577993709
     },
-    "post_url":"https://learningautomatingapis.tumblr.com/post/189889877719/edited-hello-this-is-my-second-post-from",
+    "post_url":"https://learningautomatingapis.tumblr.com/post/190020995459/edited-hello-this-is-my-second-post-from",
     "slug":"edited-hello-this-is-my-second-post-from",
-    "date":"2019-12-27 00:19:01 GMT",
-    "timestamp":1577405941,
+    "date":"2020-01-02 19:35:09 GMT",
+    "timestamp":1577993709,
     "state":"published",
-    "reblog_key":"Ccw9qFe2",
+    "reblog_key":"ymwWmFu4",
     "tags":[],
-    "short_url":"https://tmblr.co/ZJJHvV2msKPRN",
+    "short_url":"https://tmblr.co/ZJJHvV2m_8ac3",
     "summary":"Edited, Hello this is my second post from RestAssured api automation testing!",
     "should_open_in_legacy":false,
     "recommended_source":null,
@@ -121,10 +209,10 @@
     "muted":false
   }
 }
-2019-12-26 16:19:03 [main] INFO  TumblrPostandEditTest:264 - After editing, the post's text is: Edited, Hello this is my second post from RestAssured api automation testing!
-2019-12-26 16:19:33 [main] INFO  TumblrGetLikesTest:74 - Running GetAllTumblrPostsTest
-2019-12-26 16:19:33 [main] INFO  TumblrGetLikesTest:93 - There are 2 total likes.
-2019-12-26 16:19:33 [main] INFO  TumblrGetLikesTest:116 - The response string is {
+2020-01-02 11:35:11 [main] INFO  TumblrPostandEditTest:267 - After editing, the post's text is: Edited, Hello this is my second post from RestAssured api automation testing!
+2020-01-02 11:35:36 [main] INFO  TumblrGetLikesTest:83 - Running GetAllTumblrPostsTest
+2020-01-02 11:35:36 [main] INFO  TumblrGetLikesTest:109 - There are 2 total likes.
+2020-01-02 11:35:36 [main] INFO  TumblrGetLikesTest:132 - The response string is {
   "meta":{
     "status":200,
     "msg":"OK"
@@ -305,98 +393,10 @@
     }
   }
 }
-2019-12-26 16:19:58 [main] INFO  TumblrPostandDeleteTest:89 - Running TumblrPostTest
-2019-12-26 16:19:59 [main] INFO  TumblrPostandDeleteTest:121 - The body response is {
-  "meta":{
-    "status":201,
-    "msg":"Created"
-  },
-  "response":{
-    "id":"189889890464",
-    "state":"published",
-    "display_text":"Posted to learningautomatingapis"
-  }
-}
-2019-12-26 16:19:59 [main] INFO  TumblrPostandDeleteTest:125 - The post id is189889890464
-2019-12-26 16:19:59 [main] INFO  TumblrPostandDeleteTest:140 - Running verifyTumblrPostTest
-2019-12-26 16:19:59 [main] INFO  TumblrPostandDeleteTest:161 - The body response is {
-  "meta":{
-    "status":200,
-    "msg":"OK"
-  },
-  "response":{
-    "object_type":"post",
-    "type":"blocks",
-    "id":189889890464,
-    "tumblelog_uuid":"t:qXeD3DbBONfNgCTmHErbKw",
-    "blog_name":"learningautomatingapis",
-    "blog":{
-      "name":"learningautomatingapis",
-      "title":"API Learning",
-      "description":"",
-      "url":"https://learningautomatingapis.tumblr.com/",
-      "uuid":"t:qXeD3DbBONfNgCTmHErbKw",
-      "updated":1577405999
-    },
-    "post_url":"https://learningautomatingapis.tumblr.com/post/189889890464/hello-this-post-will-be-deleted-via-restassured",
-    "slug":"hello-this-post-will-be-deleted-via-restassured",
-    "date":"2019-12-27 00:19:59 GMT",
-    "timestamp":1577405999,
-    "state":"published",
-    "reblog_key":"rNBH0CSw",
-    "tags":[],
-    "short_url":"https://tmblr.co/ZJJHvV2msKSYW",
-    "summary":"Hello this post will be deleted via RestAssured api automation testing!",
-    "should_open_in_legacy":false,
-    "recommended_source":null,
-    "recommended_color":null,
-    "followed":false,
-    "liked":false,
-    "note_count":0,
-    "content":[
-      {
-        "type":"text",
-        "text":"Hello this post will be deleted via RestAssured api automation testing!"
-      }
-    ],
-    "layout":[],
-    "trail":[],
-    "can_like":false,
-    "can_reblog":true,
-    "can_send_in_message":true,
-    "muted":false
-  }
-}
-2019-12-26 16:19:59 [main] INFO  TumblrPostandDeleteTest:169 - The post's text is: Hello this post will be deleted via RestAssured api automation testing!
-2019-12-26 16:19:59 [main] INFO  TumblrPostandDeleteTest:186 - Running DeleteTumblrPostTest
-2019-12-26 16:19:59 [main] INFO  TumblrPostandDeleteTest:206 - The body response is {
-  "meta":{
-    "status":200,
-    "msg":"OK"
-  },
-  "response":{
-    "id":189889890464
-  }
-}
-2019-12-26 16:19:59 [main] INFO  TumblrPostandDeleteTest:224 - Running verifyDeleteTumblrPostTest
-2019-12-26 16:20:00 [main] INFO  TumblrPostandDeleteTest:244 - The body response is {
-  "meta":{
-    "status":404,
-    "msg":"Not Found"
-  },
-  "response":[],
-  "errors":[
-    {
-      "title":"Not Found",
-      "code":8007,
-      "detail":"Looks like something went wrong. Please try again."
-    }
-  ]
-}
-2019-12-26 16:20:20 [main] INFO  TumblrGetFollowingTest:72 - Running GetAllTumblrPostsTest
-2019-12-26 16:20:20 [main] INFO  TumblrGetFollowingTest:90 - There are 2 blogs you are following.
-2019-12-26 16:20:20 [main] INFO  TumblrGetFollowingTest:105 - Verified you are following: moreapiautomationlearning and staff.
-2019-12-26 16:20:20 [main] INFO  TumblrGetFollowingTest:108 - The response string is {
+2020-01-02 11:35:56 [main] INFO  TumblrGetFollowingTest:77 - Running GetAllTumblrPostsTest
+2020-01-02 11:35:56 [main] INFO  TumblrGetFollowingTest:100 - There are 2 blogs you are following.
+2020-01-02 11:35:56 [main] INFO  TumblrGetFollowingTest:115 - Verified you are following: moreapiautomationlearning and staff.
+2020-01-02 11:35:56 [main] INFO  TumblrGetFollowingTest:118 - The response string is {
   "meta":{
     "status":200,
     "msg":"OK"
@@ -417,7 +417,7 @@
         "description":"",
         "url":"https://staff.tumblr.com/",
         "uuid":"t:0aY0xL2Fi1OFJg4YxpmegQ",
-        "updated":1576782408
+        "updated":1577484313
       }
     ],
     "total_blogs":2,
@@ -432,10 +432,10 @@
     }
   }
 }
-2019-12-26 16:20:35 [main] INFO  TumblrGetFollowersTest:72 - Running GetAllTumblrPostsTest
-2019-12-26 16:20:35 [main] INFO  TumblrGetFollowersTest:90 - There are 2 followers.
-2019-12-26 16:20:35 [main] INFO  TumblrGetFollowersTest:104 - Verified followers: moreapiautomationlearning and cheezbot.
-2019-12-26 16:20:35 [main] INFO  TumblrGetFollowersTest:107 - The response string is {
+2020-01-02 11:36:12 [main] INFO  TumblrGetFollowersTest:79 - Running GetAllTumblrPostsTest
+2020-01-02 11:36:12 [main] INFO  TumblrGetFollowersTest:102 - There are 2 followers.
+2020-01-02 11:36:12 [main] INFO  TumblrGetFollowersTest:116 - Verified followers: moreapiautomationlearning and cheezbot.
+2020-01-02 11:36:12 [main] INFO  TumblrGetFollowersTest:119 - The response string is {
   "meta":{
     "status":200,
     "msg":"OK"
@@ -452,7 +452,7 @@
       {
         "name":"cheezbot",
         "url":"https://cheezbot.tumblr.com/",
-        "updated":1577356448,
+        "updated":1577961230,
         "following":false
       }
     ],
@@ -467,11 +467,11 @@
     }
   }
 }
-2019-12-26 16:20:45 [main] INFO  TumblrGetAllPostsTest:78 - Running GetAllTumblrPostsTest
-2019-12-26 16:20:46 [main] INFO  TumblrGetAllPostsTest:98 - There are 5 posts.
-2019-12-26 16:20:46 [main] INFO  TumblrGetAllPostsTest:103 - The first post id is 188550063614
-2019-12-26 16:20:46 [main] INFO  TumblrGetAllPostsTest:106 - The first post contains the following text: Edited, Hello this is my first post from postman!
-2019-12-26 16:20:46 [main] INFO  TumblrGetAllPostsTest:111 - The response is {
+2020-01-02 11:36:22 [main] INFO  TumblrGetAllPostsTest:89 - Running GetAllTumblrPostsTest
+2020-01-02 11:36:23 [main] INFO  TumblrGetAllPostsTest:113 - There are 6 posts.
+2020-01-02 11:36:23 [main] INFO  TumblrGetAllPostsTest:118 - The first post id is 188550063614
+2020-01-02 11:36:23 [main] INFO  TumblrGetAllPostsTest:121 - The first post contains the following text: Edited, Hello this is my first post from postman!
+2020-01-02 11:36:23 [main] INFO  TumblrGetAllPostsTest:126 - The response is {
   "meta":{
     "status":200,
     "msg":"OK"
@@ -496,18 +496,18 @@
       "likes":2,
       "messages":0,
       "name":"learningautomatingapis",
-      "posts":5,
+      "posts":6,
       "primary":true,
       "queue":0,
       "share_likes":true,
       "subscribed":false,
       "title":"API Learning",
-      "total_posts":5,
+      "total_posts":6,
       "tweet":"N",
       "twitter_enabled":false,
       "twitter_send":false,
       "type":"public",
-      "updated":1577405999,
+      "updated":1577993709,
       "url":"https://learningautomatingapis.tumblr.com/",
       "uuid":"t:qXeD3DbBONfNgCTmHErbKw",
       "is_optout_ads":false
@@ -522,18 +522,18 @@
           "description":"",
           "url":"https://learningautomatingapis.tumblr.com/",
           "uuid":"t:qXeD3DbBONfNgCTmHErbKw",
-          "updated":1577405999
+          "updated":1577993709
         },
-        "id":189889877719,
-        "post_url":"https://learningautomatingapis.tumblr.com/post/189889877719/edited-hello-this-is-my-second-post-from",
+        "id":190020995459,
+        "post_url":"https://learningautomatingapis.tumblr.com/post/190020995459/edited-hello-this-is-my-second-post-from",
         "slug":"edited-hello-this-is-my-second-post-from",
-        "date":"2019-12-27 00:19:01 GMT",
-        "timestamp":1577405941,
+        "date":"2020-01-02 19:35:09 GMT",
+        "timestamp":1577993709,
         "state":"published",
         "format":"html",
-        "reblog_key":"Ccw9qFe2",
+        "reblog_key":"ymwWmFu4",
         "tags":[],
-        "short_url":"https://tmblr.co/ZJJHvV2msKPRN",
+        "short_url":"https://tmblr.co/ZJJHvV2m_8ac3",
         "summary":"Edited, Hello this is my second post from RestAssured api automation testing!",
         "should_open_in_legacy":false,
         "recommended_source":null,
@@ -575,7 +575,7 @@
               "can_be_followed":false
             },
             "post":{
-              "id":189889877719
+              "id":190020995459
             },
             "content_raw":"<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
             "content":"<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
@@ -599,18 +599,18 @@
           "description":"",
           "url":"https://learningautomatingapis.tumblr.com/",
           "uuid":"t:qXeD3DbBONfNgCTmHErbKw",
-          "updated":1577405999
+          "updated":1577993709
         },
-        "id":189889736599,
-        "post_url":"https://learningautomatingapis.tumblr.com/post/189889736599/edited-hello-this-is-my-second-post-from",
+        "id":190020933724,
+        "post_url":"https://learningautomatingapis.tumblr.com/post/190020933724/edited-hello-this-is-my-second-post-from",
         "slug":"edited-hello-this-is-my-second-post-from",
-        "date":"2019-12-27 00:09:46 GMT",
-        "timestamp":1577405386,
+        "date":"2020-01-02 19:31:28 GMT",
+        "timestamp":1577993488,
         "state":"published",
         "format":"html",
-        "reblog_key":"0ZbMNuKh",
+        "reblog_key":"KEcC12iZ",
         "tags":[],
-        "short_url":"https://tmblr.co/ZJJHvV2msJs_N",
+        "short_url":"https://tmblr.co/ZJJHvV2m_8LXS",
         "summary":"Edited, Hello this is my second post from RestAssured api automation testing!",
         "should_open_in_legacy":false,
         "recommended_source":null,
@@ -652,7 +652,7 @@
               "can_be_followed":false
             },
             "post":{
-              "id":189889736599
+              "id":190020933724
             },
             "content_raw":"<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
             "content":"<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
@@ -676,19 +676,19 @@
           "description":"",
           "url":"https://learningautomatingapis.tumblr.com/",
           "uuid":"t:qXeD3DbBONfNgCTmHErbKw",
-          "updated":1577405999
+          "updated":1577993709
         },
-        "id":189889679114,
-        "post_url":"https://learningautomatingapis.tumblr.com/post/189889679114/edited-hello-this-is-my-second-post-from",
-        "slug":"edited-hello-this-is-my-second-post-from",
-        "date":"2019-12-27 00:05:48 GMT",
-        "timestamp":1577405148,
+        "id":190020868454,
+        "post_url":"https://learningautomatingapis.tumblr.com/post/190020868454/hello-this-is-my-second-post-from-restassured-api",
+        "slug":"hello-this-is-my-second-post-from-restassured-api",
+        "date":"2020-01-02 19:27:47 GMT",
+        "timestamp":1577993267,
         "state":"published",
         "format":"html",
-        "reblog_key":"I71tf9Ba",
+        "reblog_key":"SDt5PI53",
         "tags":[],
-        "short_url":"https://tmblr.co/ZJJHvV2msJeyA",
-        "summary":"Edited, Hello this is my second post from RestAssured api automation testing!",
+        "short_url":"https://tmblr.co/ZJJHvV2m_85bc",
+        "summary":"Hello this is my second post from RestAssured api automation testing!",
         "should_open_in_legacy":false,
         "recommended_source":null,
         "recommended_color":null,
@@ -696,9 +696,9 @@
         "liked":false,
         "note_count":0,
         "title":"",
-        "body":"<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
+        "body":"<p>Hello this is my second post from RestAssured api automation testing!</p>",
         "reblog":{
-          "comment":"<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
+          "comment":"<p>Hello this is my second post from RestAssured api automation testing!</p>",
           "tree_html":""
         },
         "trail":[
@@ -729,10 +729,10 @@
               "can_be_followed":false
             },
             "post":{
-              "id":189889679114
+              "id":"190020868454"
             },
-            "content_raw":"<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
-            "content":"<p>Edited, Hello this is my second post from RestAssured api automation testing!</p>",
+            "content_raw":"<p>Hello this is my second post from RestAssured api automation testing!</p>",
+            "content":"<p>Hello this is my second post from RestAssured api automation testing!</p>",
             "is_current_item":true,
             "is_root_item":true
           }
@@ -753,7 +753,84 @@
           "description":"",
           "url":"https://learningautomatingapis.tumblr.com/",
           "uuid":"t:qXeD3DbBONfNgCTmHErbKw",
-          "updated":1577405999
+          "updated":1577993709
+        },
+        "id":190020824934,
+        "post_url":"https://learningautomatingapis.tumblr.com/post/190020824934/hello-this-is-my-second-post-from-restassured-api",
+        "slug":"hello-this-is-my-second-post-from-restassured-api",
+        "date":"2020-01-02 19:25:11 GMT",
+        "timestamp":1577993111,
+        "state":"published",
+        "format":"html",
+        "reblog_key":"IBKYbOB7",
+        "tags":[],
+        "short_url":"https://tmblr.co/ZJJHvV2m_7wzc",
+        "summary":"Hello this is my second post from RestAssured api automation testing!",
+        "should_open_in_legacy":false,
+        "recommended_source":null,
+        "recommended_color":null,
+        "followed":false,
+        "liked":false,
+        "note_count":0,
+        "title":"",
+        "body":"<p>Hello this is my second post from RestAssured api automation testing!</p>",
+        "reblog":{
+          "comment":"<p>Hello this is my second post from RestAssured api automation testing!</p>",
+          "tree_html":""
+        },
+        "trail":[
+          {
+            "blog":{
+              "name":"learningautomatingapis",
+              "active":true,
+              "theme":{
+                "avatar_shape":"circle",
+                "background_color":"#FAFAFA",
+                "body_font":"Helvetica Neue",
+                "header_bounds":0,
+                "header_image":"https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                "header_image_focused":"https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                "header_image_scaled":"https://assets.tumblr.com/images/default_header/optica_pattern_02.png?_v=b976ee00195b1b7806c94ae285ca46a7",
+                "header_stretch":true,
+                "link_color":"#529ECC",
+                "show_avatar":true,
+                "show_description":true,
+                "show_header_image":true,
+                "show_title":true,
+                "title_color":"#444444",
+                "title_font":"Gibson",
+                "title_font_weight":"bold"
+              },
+              "share_likes":true,
+              "share_following":true,
+              "can_be_followed":false
+            },
+            "post":{
+              "id":"190020824934"
+            },
+            "content_raw":"<p>Hello this is my second post from RestAssured api automation testing!</p>",
+            "content":"<p>Hello this is my second post from RestAssured api automation testing!</p>",
+            "is_current_item":true,
+            "is_root_item":true
+          }
+        ],
+        "can_like":false,
+        "can_reblog":true,
+        "can_send_in_message":true,
+        "muted":false,
+        "can_reply":true,
+        "display_avatar":true
+      },
+      {
+        "type":"text",
+        "blog_name":"learningautomatingapis",
+        "blog":{
+          "name":"learningautomatingapis",
+          "title":"API Learning",
+          "description":"",
+          "url":"https://learningautomatingapis.tumblr.com/",
+          "uuid":"t:qXeD3DbBONfNgCTmHErbKw",
+          "updated":1577993709
         },
         "id":188573463554,
         "post_url":"https://learningautomatingapis.tumblr.com/post/188573463554/hello-this-is-my-first-post-from-restassured-api",
@@ -830,7 +907,7 @@
           "description":"",
           "url":"https://learningautomatingapis.tumblr.com/",
           "uuid":"t:qXeD3DbBONfNgCTmHErbKw",
-          "updated":1577405999
+          "updated":1577993709
         },
         "id":188550063614,
         "post_url":"https://learningautomatingapis.tumblr.com/post/188550063614/edited-hello-this-is-my-first-post-from-postman",
@@ -899,7 +976,7 @@
         "display_avatar":true
       }
     ],
-    "total_posts":5,
+    "total_posts":6,
     "_links":{
       "next":{
         "href":"/v2/blog/learningautomatingapis/posts/text?type=text&offset=20&page_number=2",

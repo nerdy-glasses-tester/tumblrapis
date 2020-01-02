@@ -6,39 +6,44 @@
         <listener class-name="resources.TestListener"/>
 </listeners>
 
+ 
+  <test name="Tumblr-Post-and-Delete">
+    <classes>
+      <class name="tumblrapis.posts.TumblrPostandDeleteTest"/>
+    </classes>
+  </test>
+
  <test name="Tumblr-Post-and-Edit">
     <classes>
       <class name="tumblrapis.posts.TumblrPostandEditTest"/>
     </classes>
   </test>
-  
+
 
   <test name="Tumblr-Get-Likes">
     <classes>
 <class name="tumblrapis.posts.TumblrGetLikesTest"/>
     </classes>
   </test>
-  <test name="Tumblr-Post-and-Delete">
-    <classes>
-      <class name="tumblrapis.posts.TumblrPostandDeleteTest"/>
-    </classes>
-  </test>
+
   <test name="Tumblr-Get-Following">
     <classes>
       <class name="tumblrapis.posts.TumblrGetFollowingTest"/>
     </classes>
   </test>
+  
   <test name="Tumblr-Get-Followers">
     <classes>
       <class name="tumblrapis.posts.TumblrGetFollowersTest"/>
     </classes>
   </test>
-
-    
-  <test name="Tumblr-Get-All-Posts">
+  
+    <test name="Tumblr-Get-All-Posts">
     <classes>
       <class name="tumblrapis.posts.TumblrGetAllPostsTest"/>
     </classes>
   </test>  
+ 
+  
 </suite>
 

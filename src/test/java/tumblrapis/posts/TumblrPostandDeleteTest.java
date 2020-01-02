@@ -4,11 +4,9 @@ import org.testng.annotations.Test;
 import com.cedarsoftware.util.io.JsonWriter;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import java.io.File;
@@ -23,13 +21,16 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import io.restassured.RestAssured;
 import io.restassured.config.LogConfig;
+import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import models.Content;
 import models.PostTextModel;
 import resources.ExtentTestManager;
-import tumblrapis.constants.Auth;
+import tumblrapis.common.RestUtilities;
 import tumblrapis.constants.EndPoints;
 import tumblrapis.constants.Path;
 
@@ -45,10 +46,19 @@ public class TumblrPostandDeleteTest {
    static ExtentTest test;
    static Response response;
    
+   RequestSpecification reqSpec;
+   ResponseSpecification resSpec;
+
    
 	@BeforeClass
 	public void setup() throws FileNotFoundException {
-		RestAssured.baseURI = Path.BASE_URI;
+		
+		reqSpec = RestUtilities.getRequestSpecification();
+		reqSpec.basePath(Path.POSTS);
+		//reqSpec.pathParam("id",id);
+		reqSpec.log().all();
+		resSpec = RestUtilities.getResponseSpecification();
+		
 		
 		//Prints out request header and response body to separate file for just this test
 		PrintStream fileOutPutStream = new PrintStream(new File("log4jlogs/TumblrPostandDeleteTest.txt"));
@@ -61,7 +71,7 @@ public class TumblrPostandDeleteTest {
 	@SuppressWarnings("deprecation")
 	@BeforeMethod
 	public void methodsetup() {
-		
+
       requestWriter = new StringWriter();
       requestCapture = new PrintStream(new WriterOutputStream(requestWriter));
 
@@ -87,7 +97,6 @@ public class TumblrPostandDeleteTest {
 		test = ExtentTestManager.startTest(methodName, "Starting test");	
 
 		log.info("Running TumblrPostTest");
-		RestAssured.basePath = Path.POSTS;
 	
         Content content = new Content();
         content.setAdditionalProperty("type", "text");
@@ -101,14 +110,14 @@ public class TumblrPostandDeleteTest {
 		
 		response =
 		given()
-			.auth()
-			.oauth(Auth.CONSUMER_KEY, Auth.CONSUMER_SECRET, Auth.ACCESS_TOKEN, Auth.ACCESS_SECRET)
+			.filter(new RequestLoggingFilter(requestCapture))
+			.spec(reqSpec)
 			.contentType(ContentType.JSON)
 			.body(contenttext)
-			.log().all()
 		.when()
 			.post()
 		.then()
+			.spec(resSpec)
 			.statusCode(201).and()
 			.contentType(ContentType.JSON).and()
 			.body("meta.msg", equalTo("Created"))
@@ -138,20 +147,20 @@ public class TumblrPostandDeleteTest {
 		test = ExtentTestManager.startTest(methodName, "Starting test");	
 		
 		log.info("Running verifyTumblrPostTest");
-		RestAssured.basePath = Path.POSTS;
 		
 		response =
 		given()
-			.auth()
-			.oauth(Auth.CONSUMER_KEY, Auth.CONSUMER_SECRET, Auth.ACCESS_TOKEN, Auth.ACCESS_SECRET)
-			.pathParam("id", id)
-			.log().all()
+			.filter(new RequestLoggingFilter(requestCapture))
+			.spec(RestUtilities.createPathParam(reqSpec,"id", id))
 		.when()
 			.get(EndPoints.POSTS_SPECIFIC)
 		.then()
+			.spec(resSpec)
 			.statusCode(200).and()
 			.contentType(ContentType.JSON).and()
 			.body("meta.msg", equalTo("OK"))
+			.body("response.id", equalTo(Long.parseLong(id)))
+			.body("response.summary", equalTo(originaltext))
 			.log().all()
 			.extract()
 			.response();
@@ -176,6 +185,12 @@ public class TumblrPostandDeleteTest {
 	@Test(dependsOnMethods={"TumblrPostandDeleteTest_verifyPostTest"})
 	public void TumblrPostandDeleteTest_DeletePostTest() {
 		
+		reqSpec = RestUtilities.getRequestSpecification();
+		reqSpec.basePath(Path.POST);
+	    reqSpec.pathParam("id", id);
+	    reqSpec.log().all();
+
+		
 		String methodName = new Object() {}
 	      .getClass()
 	      .getEnclosingMethod()
@@ -184,17 +199,16 @@ public class TumblrPostandDeleteTest {
 		test = ExtentTestManager.startTest(methodName, "Starting test");	
 		
         log.info("Running DeleteTumblrPostTest");
-		RestAssured.basePath = Path.POST;
-		
+
 		response =
 		given()
-			.auth()
-			.oauth(Auth.CONSUMER_KEY, Auth.CONSUMER_SECRET, Auth.ACCESS_TOKEN, Auth.ACCESS_SECRET)
-			.pathParam("id", id)
-			.log().all()
+			.filter(new RequestLoggingFilter(requestCapture))
+			//.spec(RestUtilities.createQueryParam(reqSpec,"id", id))
+			.spec(reqSpec)
 		.when()
 			.delete(EndPoints.POST_DELETE)
 		.then()
+			.spec(resSpec)
 			.statusCode(200).and()
 			.contentType(ContentType.JSON).and()
 			.body("meta.msg", equalTo("OK"))
@@ -222,17 +236,15 @@ public class TumblrPostandDeleteTest {
 		
 		
 		log.info("Running verifyDeleteTumblrPostTest");
-		RestAssured.basePath = Path.POSTS;
 		
 		response =
 		given()
-			.auth()
-			.oauth(Auth.CONSUMER_KEY, Auth.CONSUMER_SECRET, Auth.ACCESS_TOKEN, Auth.ACCESS_SECRET)
-			.pathParam("id", id)
-			.log().all()
+			.filter(new RequestLoggingFilter(requestCapture))
+			.spec(RestUtilities.createPathParam(reqSpec,"id", id))
 		.when()
 			.get(EndPoints.POSTS_SPECIFIC)
 		.then()
+			.spec(resSpec)
 			.statusCode(404).and()
 			.contentType(ContentType.JSON).and()
 			.body("meta.msg", equalTo("Not Found"))

@@ -5,13 +5,11 @@ import org.testng.annotations.Test;
 import com.cedarsoftware.util.io.JsonWriter;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
@@ -22,9 +20,13 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import io.restassured.RestAssured;
 import io.restassured.config.LogConfig;
+import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import resources.ExtentTestManager;
+import tumblrapis.common.RestUtilities;
 import tumblrapis.constants.Auth;
 import tumblrapis.constants.EndPoints;
 import tumblrapis.constants.Path;
@@ -39,10 +41,17 @@ public class TumblrGetLikesTest {
     static ExtentTest test;
     static Response response;
 	
+    RequestSpecification reqSpec;
+    ResponseSpecification resSpec;
+    
 	@BeforeClass
 	public void setup() throws FileNotFoundException {
-		RestAssured.baseURI = Path.BASE_URI;
-		RestAssured.basePath = Path.LIKES;
+		reqSpec = RestUtilities.getRequestSpecification();
+		reqSpec.basePath(Path.LIKES);
+		//reqSpec.pathParam("API_KEY", API_KEY);
+		reqSpec.log().all();
+		resSpec = RestUtilities.getResponseSpecification();
+		
 		
 		//Prints out request header and response body to separate file for just this test
 		PrintStream fileOutPutStream = new PrintStream(new File("log4jlogs/TumblrGetLikesTest.txt"));
@@ -74,16 +83,23 @@ public class TumblrGetLikesTest {
 		log.info("Running GetAllTumblrPostsTest");
 		response =
 		given()
-			.auth()
-			.oauth(Auth.CONSUMER_KEY, Auth.CONSUMER_SECRET, Auth.ACCESS_TOKEN, Auth.ACCESS_SECRET)
-			.pathParam("API_KEY", API_KEY)
-			.log().all()
+			.filter(new RequestLoggingFilter(requestCapture))
+			.spec(RestUtilities.createPathParam(reqSpec,"API_KEY",API_KEY))
+			//.spec(reqSpec)
 		.when()
 			.post(EndPoints.LIKES_GET)
 		.then()
+			.spec(resSpec)
 			.statusCode(200).and()
 			.contentType(ContentType.JSON).and()
 			.body("meta.msg", equalTo("OK"))
+			.body("response.liked_count", equalTo(2))
+			.body("response.liked_posts.blog.name[0]", equalTo("moreapiautomationlearning"))
+			.body("response.liked_posts.blog.name[1]", equalTo("moreapiautomationlearning"))
+			.body("response.liked_posts.summary[0]", equalTo("Second Post"))
+			.body("response.liked_posts.summary[1]", equalTo("First Post"))
+			.body("response.liked_posts.body[0]", containsString("Hey this is my second post"))
+			.body("response.liked_posts.body[1]", containsString("Hey this is my first post"))
 			.log().all()
 			.extract()
 			.response();

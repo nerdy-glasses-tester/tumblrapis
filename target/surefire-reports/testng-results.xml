@@ -2,196 +2,196 @@
 <testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="tumblrapis" duration-ms="110749" started-at="2019-12-26T16:18:55 PST" finished-at="2019-12-26T16:20:46 PST">
+  <suite name="tumblrapis" duration-ms="114002" started-at="2020-01-02T11:34:29 PST" finished-at="2020-01-02T11:36:23 PST">
     <groups>
     </groups>
-    <test name="Tumblr-Post-and-Edit" duration-ms="7665" started-at="2019-12-26T16:18:55 PST" finished-at="2019-12-26T16:19:03 PST">
-      <class name="tumblrapis.posts.TumblrPostandEditTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@16d04d3d]" name="setup" is-config="true" duration-ms="249" started-at="2019-12-26T16:18:55 PST" finished-at="2019-12-26T16:18:55 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@16d04d3d]" name="methodsetup" is-config="true" duration-ms="1" started-at="2019-12-26T16:18:55 PST" finished-at="2019-12-26T16:18:55 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodsetup -->
-        <test-method status="PASS" signature="TumblrPostandEditTest_PostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@16d04d3d]" name="TumblrPostandEditTest_PostTest" duration-ms="6502" started-at="2019-12-26T16:18:55 PST" finished-at="2019-12-26T16:19:02 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TumblrPostandEditTest_PostTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@16d04d3d]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-12-26T16:19:02 PST" finished-at="2019-12-26T16:19:02 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@16d04d3d]" name="methodsetup" is-config="true" duration-ms="0" started-at="2019-12-26T16:19:02 PST" finished-at="2019-12-26T16:19:02 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodsetup -->
-        <test-method status="PASS" signature="TumblrPostandEditTest_verifyPostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@16d04d3d]" name="TumblrPostandEditTest_verifyPostTest" duration-ms="298" started-at="2019-12-26T16:19:02 PST" depends-on-methods="tumblrapis.posts.TumblrPostandEditTest.TumblrPostandEditTest_PostTest" finished-at="2019-12-26T16:19:02 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TumblrPostandEditTest_verifyPostTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@16d04d3d]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-12-26T16:19:02 PST" finished-at="2019-12-26T16:19:02 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@16d04d3d]" name="methodsetup" is-config="true" duration-ms="1" started-at="2019-12-26T16:19:02 PST" finished-at="2019-12-26T16:19:02 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodsetup -->
-        <test-method status="PASS" signature="TumblrPostandEditTest_EditPostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@16d04d3d]" name="TumblrPostandEditTest_EditPostTest" duration-ms="288" started-at="2019-12-26T16:19:02 PST" depends-on-methods="tumblrapis.posts.TumblrPostandEditTest.TumblrPostandEditTest_verifyPostTest" finished-at="2019-12-26T16:19:02 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TumblrPostandEditTest_EditPostTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@16d04d3d]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-12-26T16:19:02 PST" finished-at="2019-12-26T16:19:02 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="TumblrPostandEditTest_verfiyEditPostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@16d04d3d]" name="TumblrPostandEditTest_verfiyEditPostTest" duration-ms="304" started-at="2019-12-26T16:19:02 PST" depends-on-methods="tumblrapis.posts.TumblrPostandEditTest.TumblrPostandEditTest_EditPostTest" finished-at="2019-12-26T16:19:03 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TumblrPostandEditTest_verfiyEditPostTest -->
-        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@16d04d3d]" name="methodsetup" is-config="true" duration-ms="0" started-at="2019-12-26T16:19:02 PST" finished-at="2019-12-26T16:19:02 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodsetup -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@16d04d3d]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-12-26T16:19:03 PST" finished-at="2019-12-26T16:19:03 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tumblrapis.posts.TumblrPostandEditTest -->
-    </test> <!-- Tumblr-Post-and-Edit -->
-    <test name="Tumblr-Get-Likes" duration-ms="370" started-at="2019-12-26T16:19:33 PST" finished-at="2019-12-26T16:19:33 PST">
-      <class name="tumblrapis.posts.TumblrGetLikesTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tumblrapis.posts.TumblrGetLikesTest@6cf0e0ba]" name="setup" is-config="true" duration-ms="0" started-at="2019-12-26T16:19:33 PST" finished-at="2019-12-26T16:19:33 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="GetAllTumblrPostsTest()[pri:0, instance:tumblrapis.posts.TumblrGetLikesTest@6cf0e0ba]" name="GetAllTumblrPostsTest" duration-ms="367" started-at="2019-12-26T16:19:33 PST" finished-at="2019-12-26T16:19:33 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetAllTumblrPostsTest -->
-        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrGetLikesTest@6cf0e0ba]" name="methodsetup" is-config="true" duration-ms="0" started-at="2019-12-26T16:19:33 PST" finished-at="2019-12-26T16:19:33 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodsetup -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrGetLikesTest@6cf0e0ba]" name="tearDown" is-config="true" duration-ms="2" started-at="2019-12-26T16:19:33 PST" finished-at="2019-12-26T16:19:33 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tumblrapis.posts.TumblrGetLikesTest -->
-    </test> <!-- Tumblr-Get-Likes -->
-    <test name="Tumblr-Post-and-Delete" duration-ms="1353" started-at="2019-12-26T16:19:58 PST" finished-at="2019-12-26T16:20:00 PST">
+    <test name="Tumblr-Post-and-Delete" duration-ms="9755" started-at="2020-01-02T11:34:29 PST" finished-at="2020-01-02T11:34:38 PST">
       <class name="tumblrapis.posts.TumblrPostandDeleteTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@3c19aaa5]" name="setup" is-config="true" duration-ms="0" started-at="2019-12-26T16:19:58 PST" finished-at="2019-12-26T16:19:58 PST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@1d2adfbe]" name="setup" is-config="true" duration-ms="353" started-at="2020-01-02T11:34:29 PST" finished-at="2020-01-02T11:34:29 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@3c19aaa5]" name="methodsetup" is-config="true" duration-ms="0" started-at="2019-12-26T16:19:58 PST" finished-at="2019-12-26T16:19:58 PST">
+        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@1d2adfbe]" name="methodsetup" is-config="true" duration-ms="1" started-at="2020-01-02T11:34:29 PST" finished-at="2020-01-02T11:34:29 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodsetup -->
-        <test-method status="PASS" signature="TumblrPostandDeleteTest_PostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@3c19aaa5]" name="TumblrPostandDeleteTest_PostTest" duration-ms="491" started-at="2019-12-26T16:19:58 PST" finished-at="2019-12-26T16:19:59 PST">
+        <test-method status="PASS" signature="TumblrPostandDeleteTest_PostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@1d2adfbe]" name="TumblrPostandDeleteTest_PostTest" duration-ms="8489" started-at="2020-01-02T11:34:29 PST" finished-at="2020-01-02T11:34:38 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TumblrPostandDeleteTest_PostTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@3c19aaa5]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-12-26T16:19:59 PST" finished-at="2019-12-26T16:19:59 PST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@1d2adfbe]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-01-02T11:34:38 PST" finished-at="2020-01-02T11:34:38 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="TumblrPostandDeleteTest_verifyPostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@3c19aaa5]" name="TumblrPostandDeleteTest_verifyPostTest" duration-ms="298" started-at="2019-12-26T16:19:59 PST" depends-on-methods="tumblrapis.posts.TumblrPostandDeleteTest.TumblrPostandDeleteTest_PostTest" finished-at="2019-12-26T16:19:59 PST">
+        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@1d2adfbe]" name="methodsetup" is-config="true" duration-ms="0" started-at="2020-01-02T11:34:38 PST" finished-at="2020-01-02T11:34:38 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodsetup -->
+        <test-method status="PASS" signature="TumblrPostandDeleteTest_verifyPostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@1d2adfbe]" name="TumblrPostandDeleteTest_verifyPostTest" duration-ms="342" started-at="2020-01-02T11:34:38 PST" depends-on-methods="tumblrapis.posts.TumblrPostandDeleteTest.TumblrPostandDeleteTest_PostTest" finished-at="2020-01-02T11:34:38 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TumblrPostandDeleteTest_verifyPostTest -->
-        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@3c19aaa5]" name="methodsetup" is-config="true" duration-ms="0" started-at="2019-12-26T16:19:59 PST" finished-at="2019-12-26T16:19:59 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodsetup -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@3c19aaa5]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-12-26T16:19:59 PST" finished-at="2019-12-26T16:19:59 PST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@1d2adfbe]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-02T11:34:38 PST" finished-at="2020-01-02T11:34:38 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@3c19aaa5]" name="methodsetup" is-config="true" duration-ms="0" started-at="2019-12-26T16:19:59 PST" finished-at="2019-12-26T16:19:59 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodsetup -->
-        <test-method status="PASS" signature="TumblrPostandDeleteTest_DeletePostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@3c19aaa5]" name="TumblrPostandDeleteTest_DeletePostTest" duration-ms="267" started-at="2019-12-26T16:19:59 PST" depends-on-methods="tumblrapis.posts.TumblrPostandDeleteTest.TumblrPostandDeleteTest_verifyPostTest" finished-at="2019-12-26T16:19:59 PST">
+        <test-method status="PASS" signature="TumblrPostandDeleteTest_DeletePostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@1d2adfbe]" name="TumblrPostandDeleteTest_DeletePostTest" duration-ms="267" started-at="2020-01-02T11:34:38 PST" depends-on-methods="tumblrapis.posts.TumblrPostandDeleteTest.TumblrPostandDeleteTest_verifyPostTest" finished-at="2020-01-02T11:34:38 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TumblrPostandDeleteTest_DeletePostTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@3c19aaa5]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-12-26T16:19:59 PST" finished-at="2019-12-26T16:19:59 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@3c19aaa5]" name="methodsetup" is-config="true" duration-ms="0" started-at="2019-12-26T16:19:59 PST" finished-at="2019-12-26T16:19:59 PST">
+        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@1d2adfbe]" name="methodsetup" is-config="true" duration-ms="0" started-at="2020-01-02T11:34:38 PST" finished-at="2020-01-02T11:34:38 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodsetup -->
-        <test-method status="PASS" signature="TumblrPostandDeleteTest_verfiyDeletePostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@3c19aaa5]" name="TumblrPostandDeleteTest_verfiyDeletePostTest" duration-ms="291" started-at="2019-12-26T16:19:59 PST" depends-on-methods="tumblrapis.posts.TumblrPostandDeleteTest.TumblrPostandDeleteTest_DeletePostTest" finished-at="2019-12-26T16:20:00 PST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@1d2adfbe]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-02T11:34:38 PST" finished-at="2020-01-02T11:34:38 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@1d2adfbe]" name="methodsetup" is-config="true" duration-ms="0" started-at="2020-01-02T11:34:38 PST" finished-at="2020-01-02T11:34:38 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodsetup -->
+        <test-method status="PASS" signature="TumblrPostandDeleteTest_verfiyDeletePostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@1d2adfbe]" name="TumblrPostandDeleteTest_verfiyDeletePostTest" duration-ms="279" started-at="2020-01-02T11:34:38 PST" depends-on-methods="tumblrapis.posts.TumblrPostandDeleteTest.TumblrPostandDeleteTest_DeletePostTest" finished-at="2020-01-02T11:34:38 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TumblrPostandDeleteTest_verfiyDeletePostTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@3c19aaa5]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-12-26T16:20:00 PST" finished-at="2019-12-26T16:20:00 PST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandDeleteTest@1d2adfbe]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-02T11:34:38 PST" finished-at="2020-01-02T11:34:38 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tumblrapis.posts.TumblrPostandDeleteTest -->
     </test> <!-- Tumblr-Post-and-Delete -->
-    <test name="Tumblr-Get-Following" duration-ms="353" started-at="2019-12-26T16:20:20 PST" finished-at="2019-12-26T16:20:20 PST">
-      <class name="tumblrapis.posts.TumblrGetFollowingTest">
-        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrGetFollowingTest@35d019a3]" name="methodsetup" is-config="true" duration-ms="1" started-at="2019-12-26T16:20:20 PST" finished-at="2019-12-26T16:20:20 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodsetup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:tumblrapis.posts.TumblrGetFollowingTest@35d019a3]" name="setup" is-config="true" duration-ms="0" started-at="2019-12-26T16:20:20 PST" finished-at="2019-12-26T16:20:20 PST">
+    <test name="Tumblr-Post-and-Edit" duration-ms="1995" started-at="2020-01-02T11:35:09 PST" finished-at="2020-01-02T11:35:11 PST">
+      <class name="tumblrapis.posts.TumblrPostandEditTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@293a5bf6]" name="setup" is-config="true" duration-ms="1" started-at="2020-01-02T11:35:09 PST" finished-at="2020-01-02T11:35:09 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="GetAllTumblrPostsTest()[pri:0, instance:tumblrapis.posts.TumblrGetFollowingTest@35d019a3]" name="GetAllTumblrPostsTest" duration-ms="350" started-at="2019-12-26T16:20:20 PST" finished-at="2019-12-26T16:20:20 PST">
+        <test-method status="PASS" signature="TumblrPostandEditTest_PostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@293a5bf6]" name="TumblrPostandEditTest_PostTest" duration-ms="643" started-at="2020-01-02T11:35:09 PST" finished-at="2020-01-02T11:35:09 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TumblrPostandEditTest_PostTest -->
+        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@293a5bf6]" name="methodsetup" is-config="true" duration-ms="0" started-at="2020-01-02T11:35:09 PST" finished-at="2020-01-02T11:35:09 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodsetup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@293a5bf6]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-02T11:35:09 PST" finished-at="2020-01-02T11:35:09 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="TumblrPostandEditTest_verifyPostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@293a5bf6]" name="TumblrPostandEditTest_verifyPostTest" duration-ms="473" started-at="2020-01-02T11:35:09 PST" depends-on-methods="tumblrapis.posts.TumblrPostandEditTest.TumblrPostandEditTest_PostTest" finished-at="2020-01-02T11:35:10 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TumblrPostandEditTest_verifyPostTest -->
+        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@293a5bf6]" name="methodsetup" is-config="true" duration-ms="0" started-at="2020-01-02T11:35:09 PST" finished-at="2020-01-02T11:35:09 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodsetup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@293a5bf6]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-01-02T11:35:10 PST" finished-at="2020-01-02T11:35:10 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@293a5bf6]" name="methodsetup" is-config="true" duration-ms="0" started-at="2020-01-02T11:35:10 PST" finished-at="2020-01-02T11:35:10 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodsetup -->
+        <test-method status="PASS" signature="TumblrPostandEditTest_EditPostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@293a5bf6]" name="TumblrPostandEditTest_EditPostTest" duration-ms="492" started-at="2020-01-02T11:35:10 PST" depends-on-methods="tumblrapis.posts.TumblrPostandEditTest.TumblrPostandEditTest_verifyPostTest" finished-at="2020-01-02T11:35:10 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TumblrPostandEditTest_EditPostTest -->
+        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@293a5bf6]" name="methodsetup" is-config="true" duration-ms="1" started-at="2020-01-02T11:35:10 PST" finished-at="2020-01-02T11:35:10 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodsetup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@293a5bf6]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-02T11:35:10 PST" finished-at="2020-01-02T11:35:10 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="TumblrPostandEditTest_verfiyEditPostTest()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@293a5bf6]" name="TumblrPostandEditTest_verfiyEditPostTest" duration-ms="380" started-at="2020-01-02T11:35:10 PST" depends-on-methods="tumblrapis.posts.TumblrPostandEditTest.TumblrPostandEditTest_EditPostTest" finished-at="2020-01-02T11:35:11 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TumblrPostandEditTest_verfiyEditPostTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrPostandEditTest@293a5bf6]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-01-02T11:35:11 PST" finished-at="2020-01-02T11:35:11 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tumblrapis.posts.TumblrPostandEditTest -->
+    </test> <!-- Tumblr-Post-and-Edit -->
+    <test name="Tumblr-Get-Likes" duration-ms="412" started-at="2020-01-02T11:35:36 PST" finished-at="2020-01-02T11:35:36 PST">
+      <class name="tumblrapis.posts.TumblrGetLikesTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tumblrapis.posts.TumblrGetLikesTest@38d8f54a]" name="setup" is-config="true" duration-ms="1" started-at="2020-01-02T11:35:36 PST" finished-at="2020-01-02T11:35:36 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrGetLikesTest@38d8f54a]" name="methodsetup" is-config="true" duration-ms="1" started-at="2020-01-02T11:35:36 PST" finished-at="2020-01-02T11:35:36 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodsetup -->
+        <test-method status="PASS" signature="GetAllTumblrPostsTest()[pri:0, instance:tumblrapis.posts.TumblrGetLikesTest@38d8f54a]" name="GetAllTumblrPostsTest" duration-ms="408" started-at="2020-01-02T11:35:36 PST" finished-at="2020-01-02T11:35:36 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetAllTumblrPostsTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrGetFollowingTest@35d019a3]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-12-26T16:20:20 PST" finished-at="2019-12-26T16:20:20 PST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrGetLikesTest@38d8f54a]" name="tearDown" is-config="true" duration-ms="2" started-at="2020-01-02T11:35:36 PST" finished-at="2020-01-02T11:35:36 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tumblrapis.posts.TumblrGetLikesTest -->
+    </test> <!-- Tumblr-Get-Likes -->
+    <test name="Tumblr-Get-Following" duration-ms="307" started-at="2020-01-02T11:35:56 PST" finished-at="2020-01-02T11:35:56 PST">
+      <class name="tumblrapis.posts.TumblrGetFollowingTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tumblrapis.posts.TumblrGetFollowingTest@18078bef]" name="setup" is-config="true" duration-ms="1" started-at="2020-01-02T11:35:56 PST" finished-at="2020-01-02T11:35:56 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="GetAllTumblrPostsTest()[pri:0, instance:tumblrapis.posts.TumblrGetFollowingTest@18078bef]" name="GetAllTumblrPostsTest" duration-ms="304" started-at="2020-01-02T11:35:56 PST" finished-at="2020-01-02T11:35:56 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllTumblrPostsTest -->
+        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrGetFollowingTest@18078bef]" name="methodsetup" is-config="true" duration-ms="0" started-at="2020-01-02T11:35:56 PST" finished-at="2020-01-02T11:35:56 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodsetup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrGetFollowingTest@18078bef]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-02T11:35:56 PST" finished-at="2020-01-02T11:35:56 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tumblrapis.posts.TumblrGetFollowingTest -->
     </test> <!-- Tumblr-Get-Following -->
-    <test name="Tumblr-Get-Followers" duration-ms="298" started-at="2019-12-26T16:20:35 PST" finished-at="2019-12-26T16:20:35 PST">
+    <test name="Tumblr-Get-Followers" duration-ms="504" started-at="2020-01-02T11:36:11 PST" finished-at="2020-01-02T11:36:12 PST">
       <class name="tumblrapis.posts.TumblrGetFollowersTest">
-        <test-method status="PASS" signature="GetAllTumblrPostsTest()[pri:0, instance:tumblrapis.posts.TumblrGetFollowersTest@313ac989]" name="GetAllTumblrPostsTest" duration-ms="296" started-at="2019-12-26T16:20:35 PST" finished-at="2019-12-26T16:20:35 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetAllTumblrPostsTest -->
-        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrGetFollowersTest@313ac989]" name="methodsetup" is-config="true" duration-ms="0" started-at="2019-12-26T16:20:35 PST" finished-at="2019-12-26T16:20:35 PST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodsetup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:tumblrapis.posts.TumblrGetFollowersTest@313ac989]" name="setup" is-config="true" duration-ms="0" started-at="2019-12-26T16:20:35 PST" finished-at="2019-12-26T16:20:35 PST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tumblrapis.posts.TumblrGetFollowersTest@2a65fe7c]" name="setup" is-config="true" duration-ms="1" started-at="2020-01-02T11:36:11 PST" finished-at="2020-01-02T11:36:11 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrGetFollowersTest@313ac989]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-12-26T16:20:35 PST" finished-at="2019-12-26T16:20:35 PST">
+        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrGetFollowersTest@2a65fe7c]" name="methodsetup" is-config="true" duration-ms="0" started-at="2020-01-02T11:36:12 PST" finished-at="2020-01-02T11:36:12 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodsetup -->
+        <test-method status="PASS" signature="GetAllTumblrPostsTest()[pri:0, instance:tumblrapis.posts.TumblrGetFollowersTest@2a65fe7c]" name="GetAllTumblrPostsTest" duration-ms="500" started-at="2020-01-02T11:36:12 PST" finished-at="2020-01-02T11:36:12 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllTumblrPostsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrGetFollowersTest@2a65fe7c]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-01-02T11:36:12 PST" finished-at="2020-01-02T11:36:12 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tumblrapis.posts.TumblrGetFollowersTest -->
     </test> <!-- Tumblr-Get-Followers -->
-    <test name="Tumblr-Get-All-Posts" duration-ms="341" started-at="2019-12-26T16:20:45 PST" finished-at="2019-12-26T16:20:46 PST">
+    <test name="Tumblr-Get-All-Posts" duration-ms="651" started-at="2020-01-02T11:36:22 PST" finished-at="2020-01-02T11:36:23 PST">
       <class name="tumblrapis.posts.TumblrGetAllPostsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tumblrapis.posts.TumblrGetAllPostsTest@2a4fb17b]" name="setup" is-config="true" duration-ms="1" started-at="2019-12-26T16:20:45 PST" finished-at="2019-12-26T16:20:45 PST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tumblrapis.posts.TumblrGetAllPostsTest@6f1de4c7]" name="setup" is-config="true" duration-ms="1" started-at="2020-01-02T11:36:22 PST" finished-at="2020-01-02T11:36:22 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrGetAllPostsTest@2a4fb17b]" name="methodsetup" is-config="true" duration-ms="0" started-at="2019-12-26T16:20:45 PST" finished-at="2019-12-26T16:20:45 PST">
+        <test-method status="PASS" signature="methodsetup()[pri:0, instance:tumblrapis.posts.TumblrGetAllPostsTest@6f1de4c7]" name="methodsetup" is-config="true" duration-ms="1" started-at="2020-01-02T11:36:22 PST" finished-at="2020-01-02T11:36:22 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodsetup -->
-        <test-method status="PASS" signature="GetAllTumblrPostsTest()[pri:0, instance:tumblrapis.posts.TumblrGetAllPostsTest@2a4fb17b]" name="GetAllTumblrPostsTest" duration-ms="337" started-at="2019-12-26T16:20:45 PST" finished-at="2019-12-26T16:20:46 PST">
+        <test-method status="PASS" signature="GetAllTumblrPostsTest()[pri:0, instance:tumblrapis.posts.TumblrGetAllPostsTest@6f1de4c7]" name="GetAllTumblrPostsTest" duration-ms="646" started-at="2020-01-02T11:36:22 PST" finished-at="2020-01-02T11:36:23 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetAllTumblrPostsTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrGetAllPostsTest@2a4fb17b]" name="tearDown" is-config="true" duration-ms="3" started-at="2019-12-26T16:20:46 PST" finished-at="2019-12-26T16:20:46 PST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tumblrapis.posts.TumblrGetAllPostsTest@6f1de4c7]" name="tearDown" is-config="true" duration-ms="3" started-at="2020-01-02T11:36:23 PST" finished-at="2020-01-02T11:36:23 PST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

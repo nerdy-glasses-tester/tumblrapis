@@ -175,21 +175,6 @@
           <div class="suite-tumblrapis-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tumblrapis.posts.TumblrGetAllPostsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="GetAllTumblrPostsTest">
-                  </a> <!-- GetAllTumblrPostsTest -->
-                  <span class="method-name">GetAllTumblrPostsTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-tumblrapis-class-passed -->
-          <div class="suite-tumblrapis-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">tumblrapis.posts.TumblrPostandEditTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -219,6 +204,21 @@
                   <a name="TumblrPostandEditTest_verifyPostTest">
                   </a> <!-- TumblrPostandEditTest_verifyPostTest -->
                   <span class="method-name">TumblrPostandEditTest_verifyPostTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-tumblrapis-class-passed -->
+          <div class="suite-tumblrapis-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tumblrapis.posts.TumblrGetAllPostsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllTumblrPostsTest">
+                  </a> <!-- GetAllTumblrPostsTest -->
+                  <span class="method-name">GetAllTumblrPostsTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -262,7 +262,7 @@
           <div class="suite-tumblrapis-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tumblrapis.posts.TumblrGetFollowersTest</span>
+              <span class="class-name">tumblrapis.posts.TumblrGetLikesTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -292,7 +292,7 @@
           <div class="suite-tumblrapis-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tumblrapis.posts.TumblrGetLikesTest</span>
+              <span class="class-name">tumblrapis.posts.TumblrGetFollowersTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -317,6 +317,11 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;resources.TestListener&quot;/&gt;
   &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Tumblr-Post-and-Delete&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tumblrapis.posts.TumblrPostandDeleteTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Tumblr-Post-and-Delete --&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Tumblr-Post-and-Edit&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tumblrapis.posts.TumblrPostandEditTest&quot;/&gt;
@@ -327,11 +332,6 @@
       &lt;class name=&quot;tumblrapis.posts.TumblrGetLikesTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Tumblr-Get-Likes --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Tumblr-Post-and-Delete&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;tumblrapis.posts.TumblrPostandDeleteTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Tumblr-Post-and-Delete --&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Tumblr-Get-Following&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tumblrapis.posts.TumblrGetFollowingTest&quot;/&gt;
@@ -358,13 +358,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
+                <span class="test-name">Tumblr-Post-and-Delete (1 class)</span>
+              </li>
+              <li>
                 <span class="test-name">Tumblr-Post-and-Edit (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Tumblr-Get-Likes (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Tumblr-Post-and-Delete (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Tumblr-Get-Following (1 class)</span>
@@ -401,49 +401,49 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TumblrPostandEditTest_PostTest')
-data.setCell(0, 2, 'tumblrapis.posts.TumblrPostandEditTest')
-data.setCell(0, 3, 6502);
+data.setCell(0, 1, 'TumblrPostandDeleteTest_PostTest')
+data.setCell(0, 2, 'tumblrapis.posts.TumblrPostandDeleteTest')
+data.setCell(0, 3, 8489);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TumblrPostandDeleteTest_PostTest')
-data.setCell(1, 2, 'tumblrapis.posts.TumblrPostandDeleteTest')
-data.setCell(1, 3, 491);
+data.setCell(1, 1, 'GetAllTumblrPostsTest')
+data.setCell(1, 2, 'tumblrapis.posts.TumblrGetAllPostsTest')
+data.setCell(1, 3, 646);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'GetAllTumblrPostsTest')
-data.setCell(2, 2, 'tumblrapis.posts.TumblrGetLikesTest')
-data.setCell(2, 3, 367);
+data.setCell(2, 1, 'TumblrPostandEditTest_PostTest')
+data.setCell(2, 2, 'tumblrapis.posts.TumblrPostandEditTest')
+data.setCell(2, 3, 643);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'GetAllTumblrPostsTest')
-data.setCell(3, 2, 'tumblrapis.posts.TumblrGetFollowingTest')
-data.setCell(3, 3, 350);
+data.setCell(3, 2, 'tumblrapis.posts.TumblrGetFollowersTest')
+data.setCell(3, 3, 500);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'GetAllTumblrPostsTest')
-data.setCell(4, 2, 'tumblrapis.posts.TumblrGetAllPostsTest')
-data.setCell(4, 3, 337);
+data.setCell(4, 1, 'TumblrPostandEditTest_EditPostTest')
+data.setCell(4, 2, 'tumblrapis.posts.TumblrPostandEditTest')
+data.setCell(4, 3, 492);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TumblrPostandEditTest_verfiyEditPostTest')
+data.setCell(5, 1, 'TumblrPostandEditTest_verifyPostTest')
 data.setCell(5, 2, 'tumblrapis.posts.TumblrPostandEditTest')
-data.setCell(5, 3, 304);
+data.setCell(5, 3, 473);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TumblrPostandEditTest_verifyPostTest')
-data.setCell(6, 2, 'tumblrapis.posts.TumblrPostandEditTest')
-data.setCell(6, 3, 298);
+data.setCell(6, 1, 'GetAllTumblrPostsTest')
+data.setCell(6, 2, 'tumblrapis.posts.TumblrGetLikesTest')
+data.setCell(6, 3, 408);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TumblrPostandDeleteTest_verifyPostTest')
-data.setCell(7, 2, 'tumblrapis.posts.TumblrPostandDeleteTest')
-data.setCell(7, 3, 298);
+data.setCell(7, 1, 'TumblrPostandEditTest_verfiyEditPostTest')
+data.setCell(7, 2, 'tumblrapis.posts.TumblrPostandEditTest')
+data.setCell(7, 3, 380);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'GetAllTumblrPostsTest')
-data.setCell(8, 2, 'tumblrapis.posts.TumblrGetFollowersTest')
-data.setCell(8, 3, 296);
+data.setCell(8, 1, 'TumblrPostandDeleteTest_verifyPostTest')
+data.setCell(8, 2, 'tumblrapis.posts.TumblrPostandDeleteTest')
+data.setCell(8, 3, 342);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TumblrPostandDeleteTest_verfiyDeletePostTest')
-data.setCell(9, 2, 'tumblrapis.posts.TumblrPostandDeleteTest')
-data.setCell(9, 3, 291);
+data.setCell(9, 1, 'GetAllTumblrPostsTest')
+data.setCell(9, 2, 'tumblrapis.posts.TumblrGetFollowingTest')
+data.setCell(9, 3, 304);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TumblrPostandEditTest_EditPostTest')
-data.setCell(10, 2, 'tumblrapis.posts.TumblrPostandEditTest')
-data.setCell(10, 3, 288);
+data.setCell(10, 1, 'TumblrPostandDeleteTest_verfiyDeletePostTest')
+data.setCell(10, 2, 'tumblrapis.posts.TumblrPostandDeleteTest')
+data.setCell(10, 3, 279);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'TumblrPostandDeleteTest_DeletePostTest')
 data.setCell(11, 2, 'tumblrapis.posts.TumblrPostandDeleteTest')
@@ -452,7 +452,7 @@ window.suiteTableData['tumblrapis']= { tableData: data, tableDiv: 'times-div-tum
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-tumblrapis">
               </div> <!-- times-div-tumblrapis -->
             </div> <!-- times-div -->
@@ -478,189 +478,189 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tumblrapis.posts.TumblrPostandEditTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tumblrapis.posts.TumblrPostandDeleteTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">methodsetup</span>
-                <span class="method-start">254 ms</span>
+                <span class="method-start">358 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TumblrPostandDeleteTest_PostTest</span>
+                <span class="method-start">359 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8849 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">8852 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TumblrPostandDeleteTest_verifyPostTest</span>
+                <span class="method-start">8852 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">9195 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">9196 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TumblrPostandDeleteTest_DeletePostTest</span>
+                <span class="method-start">9196 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">9464 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">9464 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TumblrPostandDeleteTest_verfiyDeletePostTest</span>
+                <span class="method-start">9465 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">9745 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tumblrapis.posts.TumblrPostandEditTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">39937 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodsetup</span>
+                <span class="method-start">39939 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TumblrPostandEditTest_PostTest</span>
-                <span class="method-start">255 ms</span>
+                <span class="method-start">39939 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6758 ms</span>
+                <span class="method-start">40582 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">methodsetup</span>
-                <span class="method-start">6760 ms</span>
+                <span class="method-start">40583 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TumblrPostandEditTest_verifyPostTest</span>
-                <span class="method-start">6760 ms</span>
+                <span class="method-start">40583 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7058 ms</span>
+                <span class="method-start">41056 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">methodsetup</span>
-                <span class="method-start">7059 ms</span>
+                <span class="method-start">41057 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TumblrPostandEditTest_EditPostTest</span>
-                <span class="method-start">7060 ms</span>
+                <span class="method-start">41057 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7349 ms</span>
+                <span class="method-start">41550 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">methodsetup</span>
-                <span class="method-start">7350 ms</span>
+                <span class="method-start">41550 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TumblrPostandEditTest_verfiyEditPostTest</span>
-                <span class="method-start">7350 ms</span>
+                <span class="method-start">41551 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7654 ms</span>
+                <span class="method-start">41931 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tumblrapis.posts.TumblrGetLikesTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">37852 ms</span>
+                <span class="method-start">66992 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">methodsetup</span>
-                <span class="method-start">37853 ms</span>
+                <span class="method-start">66993 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">GetAllTumblrPostsTest</span>
-                <span class="method-start">37853 ms</span>
+                <span class="method-start">66994 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38220 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tumblrapis.posts.TumblrPostandDeleteTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">63275 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">methodsetup</span>
-                <span class="method-start">63276 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TumblrPostandDeleteTest_PostTest</span>
-                <span class="method-start">63276 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">63767 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">methodsetup</span>
-                <span class="method-start">63768 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TumblrPostandDeleteTest_verifyPostTest</span>
-                <span class="method-start">63768 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">64066 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">methodsetup</span>
-                <span class="method-start">64067 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TumblrPostandDeleteTest_DeletePostTest</span>
-                <span class="method-start">64067 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">64335 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">methodsetup</span>
-                <span class="method-start">64336 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TumblrPostandDeleteTest_verfiyDeletePostTest</span>
-                <span class="method-start">64336 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">64627 ms</span>
+                <span class="method-start">67402 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tumblrapis.posts.TumblrGetFollowingTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">84675 ms</span>
+                <span class="method-start">87454 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">methodsetup</span>
-                <span class="method-start">84675 ms</span>
+                <span class="method-start">87456 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">GetAllTumblrPostsTest</span>
-                <span class="method-start">84676 ms</span>
+                <span class="method-start">87456 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">85026 ms</span>
+                <span class="method-start">87761 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tumblrapis.posts.TumblrGetFollowersTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">100070 ms</span>
+                <span class="method-start">102806 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">methodsetup</span>
-                <span class="method-start">100070 ms</span>
+                <span class="method-start">102808 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">GetAllTumblrPostsTest</span>
-                <span class="method-start">100070 ms</span>
+                <span class="method-start">102808 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">100366 ms</span>
+                <span class="method-start">103308 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tumblrapis.posts.TumblrGetAllPostsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">110398 ms</span>
+                <span class="method-start">113342 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">methodsetup</span>
-                <span class="method-start">110399 ms</span>
+                <span class="method-start">113343 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">GetAllTumblrPostsTest</span>
-                <span class="method-start">110399 ms</span>
+                <span class="method-start">113344 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">110736 ms</span>
+                <span class="method-start">113990 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

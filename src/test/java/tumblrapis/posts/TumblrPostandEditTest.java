@@ -4,11 +4,9 @@ import org.testng.annotations.Test;
 import com.cedarsoftware.util.io.JsonWriter;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import java.io.File;
@@ -27,10 +25,12 @@ import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import models.Content;
 import models.PostTextModel;
 import resources.ExtentTestManager;
-import tumblrapis.constants.Auth;
+import tumblrapis.common.RestUtilities;
 import tumblrapis.constants.EndPoints;
 import tumblrapis.constants.Path;
 
@@ -47,11 +47,17 @@ public class TumblrPostandEditTest {
    static ExtentTest test;
    static Response response;
 
+   RequestSpecification reqSpec;
+   ResponseSpecification resSpec;
+   
    
 	@BeforeClass
 	public void setup() throws FileNotFoundException {
-		RestAssured.baseURI = Path.BASE_URI;
-		RestAssured.basePath = Path.POSTS;
+		reqSpec = RestUtilities.getRequestSpecification();
+		reqSpec.basePath(Path.POSTS);
+		//reqSpec.pathParam("id", id);
+		reqSpec.log().all();
+		resSpec = RestUtilities.getResponseSpecification();
 		
 		//Prints out request header and response body to separate file for just this test
 		PrintStream fileOutPutStream = new PrintStream(new File("log4jlogs/TumblrPostandEditTest.txt"));
@@ -104,15 +110,14 @@ public class TumblrPostandEditTest {
 		
 		response =
 		given()
-			.filter(new RequestLoggingFilter(requestCapture))
-			.auth()
-			.oauth(Auth.CONSUMER_KEY, Auth.CONSUMER_SECRET, Auth.ACCESS_TOKEN, Auth.ACCESS_SECRET)
+	    	.filter(new RequestLoggingFilter(requestCapture))
+	    	.spec(reqSpec)
 			.contentType(ContentType.JSON)
 			.body(contenttext)
-			.log().all()
 		.when()
 			.post()
 		.then()
+			.spec(resSpec)
 			.statusCode(201).and()
 			.contentType(ContentType.JSON).and()
 			.body("meta.msg", equalTo("Created"))
@@ -145,17 +150,17 @@ public class TumblrPostandEditTest {
 		log.info("Running verifyTumblrPostTest");
 		response =
 		given()
-			.filter(new RequestLoggingFilter(requestCapture))
-			.auth()
-			.oauth(Auth.CONSUMER_KEY, Auth.CONSUMER_SECRET, Auth.ACCESS_TOKEN, Auth.ACCESS_SECRET)
-			.pathParam("id", id)
-			.log().all()
+    		.filter(new RequestLoggingFilter(requestCapture))
+    		.spec(RestUtilities.createPathParam(reqSpec,"id", id))
 		.when()
 			.get(EndPoints.POSTS_SPECIFIC)
 		.then()
+			.spec(resSpec)
 			.statusCode(200).and()
 			.contentType(ContentType.JSON).and()
 			.body("meta.msg", equalTo("OK"))
+			.body("response.id", equalTo(Long.parseLong(id)))
+			.body("response.summary",  equalTo(originaltext))
 			.log().all()
 			.extract()
 			.response();
@@ -200,15 +205,13 @@ public class TumblrPostandEditTest {
 		response =
 		given()
 			.filter(new RequestLoggingFilter(requestCapture))
-			.auth()
-			.oauth(Auth.CONSUMER_KEY, Auth.CONSUMER_SECRET, Auth.ACCESS_TOKEN, Auth.ACCESS_SECRET)
+			.spec(RestUtilities.createPathParam(reqSpec,"id", id))
 			.contentType(ContentType.JSON)
 			.body(contenttext)
-			.pathParam("id", id)
-			.log().all()
 		.when()
 			.put(EndPoints.POSTS_EDIT)
 		.then()
+			.spec(resSpec)
 			.statusCode(200).and()
 			.contentType(ContentType.JSON).and()
 			.body("meta.msg", equalTo("OK"))
@@ -238,16 +241,16 @@ public class TumblrPostandEditTest {
 		response =
 		given()
 			.filter(new RequestLoggingFilter(requestCapture))
-			.auth()
-			.oauth(Auth.CONSUMER_KEY, Auth.CONSUMER_SECRET, Auth.ACCESS_TOKEN, Auth.ACCESS_SECRET)
-			.pathParam("id", id)
-			.log().all()
+			.spec(RestUtilities.createPathParam(reqSpec,"id", id))
 		.when()
 			.get(EndPoints.POSTS_SPECIFIC)
 		.then()
+			.spec(resSpec)
 			.statusCode(200).and()
 			.contentType(ContentType.JSON).and()
 			.body("meta.msg", equalTo("OK"))
+			.body("response.id", equalTo(Long.parseLong(id)))
+			.body("response.summary", equalTo(editedtext))
 			.log().all()
 			.extract()
 			.response();

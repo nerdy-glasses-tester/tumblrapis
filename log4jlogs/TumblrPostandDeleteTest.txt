@@ -1,35 +1,15 @@
-Request method:	POST
-Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/posts
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "content": [
-        {
-            "text": "Hello this post will be deleted via RestAssured api automation testing!",
-            "type": "text"
-        }
-    ]
-}
 HTTP/1.1 201 Created
 Content-Type: application/json; charset=utf-8
-Date: Fri, 27 Dec 2019 00:19:59 GMT
+Date: Thu, 02 Jan 2020 19:34:37 GMT
 Server: openresty
 Strict-Transport-Security: max-age=31536000; preload
 X-Ratelimit-Perday-Limit: 5000
-X-Ratelimit-Perday-Remaining: 4802
-X-Ratelimit-Perday-Reset: 2649
+X-Ratelimit-Perday-Remaining: 4863
+X-Ratelimit-Perday-Reset: 8996
 X-Ratelimit-Perhour-Limit: 1000
-X-Ratelimit-Perhour-Remaining: 989
-X-Ratelimit-Perhour-Reset: 2987
-X-Rid: 1261928189555818627313311370009901327041
+X-Ratelimit-Perhour-Remaining: 980
+X-Ratelimit-Perhour-Reset: 2397
+X-Rid: 183912473260827264911192761290369845417
 X-UA-Compatible: IE=Edge,chrome=1
 Transfer-Encoding: chunked
 
@@ -39,37 +19,26 @@ Transfer-Encoding: chunked
         "msg": "Created"
     },
     "response": {
-        "id": "189889890464",
+        "id": "190020986234",
         "state": "published",
         "display_text": "Posted to learningautomatingapis"
     }
 }
-Request method:	GET
-Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/posts/189889890464
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	id=189889890464
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
 HTTP/1.1 200 OK
 Content-Encoding: gzip
 Content-Type: application/json; charset=utf-8
-Date: Fri, 27 Dec 2019 00:19:59 GMT
+Date: Thu, 02 Jan 2020 19:34:38 GMT
 Server: openresty
 Strict-Transport-Security: max-age=31536000; preload
 Vary: Accept-Encoding
 Vary: Accept-Encoding
 X-Ratelimit-Perday-Limit: 5000
-X-Ratelimit-Perday-Remaining: 4801
-X-Ratelimit-Perday-Reset: 2649
+X-Ratelimit-Perday-Remaining: 4862
+X-Ratelimit-Perday-Reset: 8995
 X-Ratelimit-Perhour-Limit: 1000
-X-Ratelimit-Perhour-Remaining: 988
-X-Ratelimit-Perhour-Reset: 2987
-X-Rid: 494668325078457072014827793459772339016
+X-Ratelimit-Perhour-Remaining: 979
+X-Ratelimit-Perhour-Reset: 2396
+X-Rid: 84881215546263089868007046229055275254
 X-UA-Compatible: IE=Edge,chrome=1
 Transfer-Encoding: chunked
 
@@ -81,7 +50,7 @@ Transfer-Encoding: chunked
     "response": {
         "object_type": "post",
         "type": "blocks",
-        "id": 189889890464,
+        "id": 190020986234,
         "tumblelog_uuid": "t:qXeD3DbBONfNgCTmHErbKw",
         "blog_name": "learningautomatingapis",
         "blog": {
@@ -90,18 +59,18 @@ Transfer-Encoding: chunked
             "description": "",
             "url": "https://learningautomatingapis.tumblr.com/",
             "uuid": "t:qXeD3DbBONfNgCTmHErbKw",
-            "updated": 1577405999
+            "updated": 1577993677
         },
-        "post_url": "https://learningautomatingapis.tumblr.com/post/189889890464/hello-this-post-will-be-deleted-via-restassured",
+        "post_url": "https://learningautomatingapis.tumblr.com/post/190020986234/hello-this-post-will-be-deleted-via-restassured",
         "slug": "hello-this-post-will-be-deleted-via-restassured",
-        "date": "2019-12-27 00:19:59 GMT",
-        "timestamp": 1577405999,
+        "date": "2020-01-02 19:34:37 GMT",
+        "timestamp": 1577993677,
         "state": "published",
-        "reblog_key": "rNBH0CSw",
+        "reblog_key": "DQGApKrQ",
         "tags": [
             
         ],
-        "short_url": "https://tmblr.co/ZJJHvV2msKSYW",
+        "short_url": "https://tmblr.co/ZJJHvV2m_8YLw",
         "summary": "Hello this post will be deleted via RestAssured api automation testing!",
         "should_open_in_legacy": false,
         "recommended_source": null,
@@ -128,12 +97,12 @@ Transfer-Encoding: chunked
     }
 }
 Request method:	DELETE
-Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/post/delete?id=189889890464
+Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/post/delete?id=190020986234
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=189889890464
+Path params:	id=190020986234
 Headers:		Accept=*/*
 Cookies:		<none>
 Multiparts:		<none>
@@ -141,19 +110,19 @@ Body:			<none>
 HTTP/1.1 200 OK
 Content-Encoding: gzip
 Content-Type: application/json; charset=utf-8
-Date: Fri, 27 Dec 2019 00:19:59 GMT
+Date: Thu, 02 Jan 2020 19:34:38 GMT
 P3p: CP="Tumblr's privacy policy is available here: https://www.tumblr.com/policy/en/privacy"
 Server: openresty
 Strict-Transport-Security: max-age=31536000; preload
 Vary: Accept-Encoding
 Vary: Accept-Encoding
 X-Ratelimit-Perday-Limit: 5000
-X-Ratelimit-Perday-Remaining: 4800
-X-Ratelimit-Perday-Reset: 2649
+X-Ratelimit-Perday-Remaining: 4861
+X-Ratelimit-Perday-Reset: 8995
 X-Ratelimit-Perhour-Limit: 1000
-X-Ratelimit-Perhour-Remaining: 987
-X-Ratelimit-Perhour-Reset: 2987
-X-Rid: 152995350961934336417401692874950366227
+X-Ratelimit-Perhour-Remaining: 978
+X-Ratelimit-Perhour-Reset: 2396
+X-Rid: 941254866822032678415890743375524328428
 X-UA-Compatible: IE=Edge,chrome=1
 Transfer-Encoding: chunked
 
@@ -163,16 +132,16 @@ Transfer-Encoding: chunked
         "msg": "OK"
     },
     "response": {
-        "id": 189889890464
+        "id": 190020986234
     }
 }
 Request method:	GET
-Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/posts/189889890464
+Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/post/190020986234
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
-Path params:	id=189889890464
+Path params:	id=190020986234
 Headers:		Accept=*/*
 Cookies:		<none>
 Multiparts:		<none>
@@ -180,18 +149,18 @@ Body:			<none>
 HTTP/1.1 404 Not Found
 Content-Encoding: gzip
 Content-Type: application/json; charset=utf-8
-Date: Fri, 27 Dec 2019 00:20:00 GMT
+Date: Thu, 02 Jan 2020 19:34:38 GMT
 Server: openresty
 Strict-Transport-Security: max-age=31536000; preload
 Vary: Accept-Encoding
 Vary: Accept-Encoding
 X-Ratelimit-Perday-Limit: 5000
-X-Ratelimit-Perday-Remaining: 4799
-X-Ratelimit-Perday-Reset: 2648
+X-Ratelimit-Perday-Remaining: 4860
+X-Ratelimit-Perday-Reset: 8995
 X-Ratelimit-Perhour-Limit: 1000
-X-Ratelimit-Perhour-Remaining: 986
-X-Ratelimit-Perhour-Reset: 2986
-X-Rid: 999702848657175269511309206796087885651
+X-Ratelimit-Perhour-Remaining: 977
+X-Ratelimit-Perhour-Reset: 2396
+X-Rid: 1445028082903728890710435554895683590227
 Transfer-Encoding: chunked
 
 {
@@ -205,8 +174,269 @@ Transfer-Encoding: chunked
     "errors": [
         {
             "title": "Not Found",
-            "code": 8007,
-            "detail": "Looks like something went wrong. Please try again."
+            "code": 0,
+            "detail": "Something broke. Try again."
         }
     ]
+}
+Request method:	POST
+Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/posts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "content": [
+        {
+            "text": "Hello this is my second post from RestAssured api automation testing!",
+            "type": "text"
+        }
+    ]
+}
+HTTP/1.1 201 Created
+Content-Type: application/json; charset=utf-8
+Date: Thu, 02 Jan 2020 19:35:09 GMT
+Server: openresty
+Strict-Transport-Security: max-age=31536000; preload
+X-Ratelimit-Perday-Limit: 5000
+X-Ratelimit-Perday-Remaining: 4859
+X-Ratelimit-Perday-Reset: 8964
+X-Ratelimit-Perhour-Limit: 1000
+X-Ratelimit-Perhour-Remaining: 976
+X-Ratelimit-Perhour-Reset: 2365
+X-Rid: 1648239045222400933510254470915940084170
+X-UA-Compatible: IE=Edge,chrome=1
+Transfer-Encoding: chunked
+
+{
+    "meta": {
+        "status": 201,
+        "msg": "Created"
+    },
+    "response": {
+        "id": "190020995459",
+        "state": "published",
+        "display_text": "Posted to learningautomatingapis"
+    }
+}
+Request method:	GET
+Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/posts/190020995459
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=190020995459
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Date: Thu, 02 Jan 2020 19:35:10 GMT
+Server: openresty
+Strict-Transport-Security: max-age=31536000; preload
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+X-Ratelimit-Perday-Limit: 5000
+X-Ratelimit-Perday-Remaining: 4858
+X-Ratelimit-Perday-Reset: 8963
+X-Ratelimit-Perhour-Limit: 1000
+X-Ratelimit-Perhour-Remaining: 975
+X-Ratelimit-Perhour-Reset: 2364
+X-Rid: 131385431663916887316557246425605876587
+X-UA-Compatible: IE=Edge,chrome=1
+Transfer-Encoding: chunked
+
+{
+    "meta": {
+        "status": 200,
+        "msg": "OK"
+    },
+    "response": {
+        "object_type": "post",
+        "type": "blocks",
+        "id": 190020995459,
+        "tumblelog_uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+        "blog_name": "learningautomatingapis",
+        "blog": {
+            "name": "learningautomatingapis",
+            "title": "API Learning",
+            "description": "",
+            "url": "https://learningautomatingapis.tumblr.com/",
+            "uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+            "updated": 1577993709
+        },
+        "post_url": "https://learningautomatingapis.tumblr.com/post/190020995459/hello-this-is-my-second-post-from-restassured-api",
+        "slug": "hello-this-is-my-second-post-from-restassured-api",
+        "date": "2020-01-02 19:35:09 GMT",
+        "timestamp": 1577993709,
+        "state": "published",
+        "reblog_key": "ymwWmFu4",
+        "tags": [
+            
+        ],
+        "short_url": "https://tmblr.co/ZJJHvV2m_8ac3",
+        "summary": "Hello this is my second post from RestAssured api automation testing!",
+        "should_open_in_legacy": false,
+        "recommended_source": null,
+        "recommended_color": null,
+        "followed": false,
+        "liked": false,
+        "note_count": 0,
+        "content": [
+            {
+                "type": "text",
+                "text": "Hello this is my second post from RestAssured api automation testing!"
+            }
+        ],
+        "layout": [
+            
+        ],
+        "trail": [
+            
+        ],
+        "can_like": false,
+        "can_reblog": true,
+        "can_send_in_message": true,
+        "muted": false
+    }
+}
+Request method:	PUT
+Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/posts/190020995459
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=190020995459
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "content": [
+        {
+            "text": "Edited, Hello this is my second post from RestAssured api automation testing!",
+            "type": "text"
+        }
+    ]
+}
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Date: Thu, 02 Jan 2020 19:35:10 GMT
+Server: openresty
+Strict-Transport-Security: max-age=31536000; preload
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+X-Ratelimit-Perday-Limit: 5000
+X-Ratelimit-Perday-Remaining: 4857
+X-Ratelimit-Perday-Reset: 8963
+X-Ratelimit-Perhour-Limit: 1000
+X-Ratelimit-Perhour-Remaining: 974
+X-Ratelimit-Perhour-Reset: 2364
+X-Rid: 89723651614041438331137325039901565466
+X-UA-Compatible: IE=Edge,chrome=1
+Transfer-Encoding: chunked
+
+{
+    "meta": {
+        "status": 200,
+        "msg": "OK"
+    },
+    "response": {
+        "id": "190020995459",
+        "state": "published",
+        "display_text": "Edited on learningautomatingapis"
+    }
+}
+Request method:	GET
+Request URI:	https://api.tumblr.com/v2/blog/learningautomatingapis/posts/190020995459
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=190020995459
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Date: Thu, 02 Jan 2020 19:35:11 GMT
+Server: openresty
+Strict-Transport-Security: max-age=31536000; preload
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+X-Ratelimit-Perday-Limit: 5000
+X-Ratelimit-Perday-Remaining: 4856
+X-Ratelimit-Perday-Reset: 8962
+X-Ratelimit-Perhour-Limit: 1000
+X-Ratelimit-Perhour-Remaining: 973
+X-Ratelimit-Perhour-Reset: 2363
+X-Rid: 170275129264030065421613370755603990749
+X-UA-Compatible: IE=Edge,chrome=1
+Transfer-Encoding: chunked
+
+{
+    "meta": {
+        "status": 200,
+        "msg": "OK"
+    },
+    "response": {
+        "object_type": "post",
+        "type": "blocks",
+        "id": 190020995459,
+        "tumblelog_uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+        "blog_name": "learningautomatingapis",
+        "blog": {
+            "name": "learningautomatingapis",
+            "title": "API Learning",
+            "description": "",
+            "url": "https://learningautomatingapis.tumblr.com/",
+            "uuid": "t:qXeD3DbBONfNgCTmHErbKw",
+            "updated": 1577993709
+        },
+        "post_url": "https://learningautomatingapis.tumblr.com/post/190020995459/edited-hello-this-is-my-second-post-from",
+        "slug": "edited-hello-this-is-my-second-post-from",
+        "date": "2020-01-02 19:35:09 GMT",
+        "timestamp": 1577993709,
+        "state": "published",
+        "reblog_key": "ymwWmFu4",
+        "tags": [
+            
+        ],
+        "short_url": "https://tmblr.co/ZJJHvV2m_8ac3",
+        "summary": "Edited, Hello this is my second post from RestAssured api automation testing!",
+        "should_open_in_legacy": false,
+        "recommended_source": null,
+        "recommended_color": null,
+        "followed": false,
+        "liked": false,
+        "note_count": 0,
+        "content": [
+            {
+                "type": "text",
+                "text": "Edited, Hello this is my second post from RestAssured api automation testing!"
+            }
+        ],
+        "layout": [
+            
+        ],
+        "trail": [
+            
+        ],
+        "can_like": false,
+        "can_reblog": true,
+        "can_send_in_message": true,
+        "muted": false
+    }
 }
